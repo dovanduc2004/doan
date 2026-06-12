@@ -1,0 +1,2202 @@
+[
+  {
+    "id": "ret_noent_087",
+    "domain": "giaoThong_VanTai",
+    "query": "Quy định về xử phạt các hành vi vi phạm quy định về điều kiện của người điều khiển xe máy chuyên dùng ra sao?",
+    "gold_sohieu": "168/2024/NĐ-CP",
+    "gold_article": "Điều 19. Xử phạt các hành vi vi phạm quy định về điều kiện của người điều khiển xe máy chuyên dùng",
+    "entities": null,
+    "has_entities": false
+  },
+  {
+    "id": "ret_ent_037",
+    "domain": "trachNhiem_HinhSu",
+    "query": "Luật 100/2015/QH13 quy định về Tội vi phạm quy định về trực ban, trực chiến, trực chỉ huy như thế nào?",
+    "gold_sohieu": "100/2015/QH13",
+    "gold_article": "Điều 409. Tội vi phạm quy định về trực ban, trực chiến, trực chỉ huy",
+    "entities": {
+      "LoaiVanBanFilter": "luật",
+      "NoibanHanhFilter": "quốc hội",
+      "NgayBanHanhFilter": "2015"
+    },
+    "has_entities": true
+  },
+  {
+    "id": "ret_ent_046",
+    "domain": "giao_duc",
+    "query": "Nghị định 61/2006/NĐ-CP có quy định gì về Trợ cấp tham quan, học tập, bồi dưỡng chuyên môn, nghiệp vụ?",
+    "gold_sohieu": "61/2006/NĐ-CP",
+    "gold_article": "Điều 14. Trợ cấp tham quan, học tập, bồi dưỡng chuyên môn, nghiệp vụ",
+    "entities": {
+      "LoaiVanBanFilter": "nghị định",
+      "NoibanHanhFilter": "chính phủ",
+      "NgayBanHanhFilter": "2006"
+    },
+    "has_entities": true
+  },
+  {
+    "id": "ret_noent_011",
+    "domain": "giaoThong_VanTai",
+    "query": "Quy định về chứng nhận đăng ký xe quân sự ra sao?",
+    "gold_sohieu": "69/2024/TT-BQP",
+    "gold_article": "Điều 8. Chứng nhận đăng ký xe quân sự",
+    "entities": null,
+    "has_entities": false
+  },
+  {
+    "id": "ret_noent_078",
+    "domain": "laoDong_TienLuong",
+    "query": "Thực hiện công tác an toàn, vệ sinh lao động trong các cơ sở sản xuất, kinh doanh có những quy định gì?",
+    "gold_sohieu": "84/2015/QH13",
+    "gold_article": "Điều 71. Thực hiện công tác an toàn, vệ sinh lao động trong các cơ sở sản xuất, kinh doanh",
+    "entities": null,
+    "has_entities": false
+  },
+  {
+    "id": "ret_noent_051",
+    "domain": "giao_duc",
+    "query": "Quy định về điều kiện để trung tâm ngoại ngữ, tin học hoạt động giáo dục ra sao?",
+    "gold_sohieu": "46/2017/NĐ-CP",
+    "gold_article": "Điều 48. Điều kiện để trung tâm ngoại ngữ, tin học hoạt động giáo dục",
+    "entities": null,
+    "has_entities": false
+  },
+  {
+    "id": "ret_ent_080",
+    "domain": "honNhan_GiaDinh",
+    "query": "Luật 52/2014/QH13 có quy định gì về Tài sản chung của vợ chồng?",
+    "gold_sohieu": "52/2014/QH13",
+    "gold_article": "Điều 33. Tài sản chung của vợ chồng",
+    "entities": {
+      "LoaiVanBanFilter": "luật",
+      "NoibanHanhFilter": "quốc hội",
+      "NgayBanHanhFilter": "2014"
+    },
+    "has_entities": true
+  },
+  {
+    "id": "ret_ent_092",
+    "domain": "giaoThong_VanTai",
+    "query": "Thông tư 83/2024/TT-BCA có quy định gì về Trách nhiệm của Công an các tỉnh, thành phố trực thuộc trung ương?",
+    "gold_sohieu": "83/2024/TT-BCA",
+    "gold_article": "Điều 11. Trách nhiệm của Công an các tỉnh, thành phố trực thuộc trung ương",
+    "entities": {
+      "LoaiVanBanFilter": "thông tư",
+      "NoibanHanhFilter": "bộ công an",
+      "NgayBanHanhFilter": "2024"
+    },
+    "has_entities": true
+  },
+  {
+    "id": "ret_ent_018",
+    "domain": "giao_duc",
+    "query": "Nghị định 20/2014/NĐ-CP có quy định gì về Tiêu chuẩn công nhận đạt chuẩn phổ cập giáo dục tiểu học mức độ 1?",
+    "gold_sohieu": "20/2014/NĐ-CP",
+    "gold_article": "Điều 9. Tiêu chuẩn công nhận đạt chuẩn phổ cập giáo dục tiểu học mức độ 1",
+    "entities": {
+      "LoaiVanBanFilter": "nghị định",
+      "NoibanHanhFilter": "chính phủ",
+      "NgayBanHanhFilter": "2014"
+    },
+    "has_entities": true
+  },
+  {
+    "id": "ret_ent_005",
+    "domain": "laoDong_TienLuong",
+    "query": "Nghị định 112/2021/NĐ-CP quy định về Sử dụng tiền ký quỹ như thế nào?",
+    "gold_sohieu": "112/2021/NĐ-CP",
+    "gold_article": "Điều 28. Sử dụng tiền ký quỹ",
+    "entities": {
+      "LoaiVanBanFilter": "nghị định",
+      "NoibanHanhFilter": "chính phủ",
+      "NgayBanHanhFilter": "2021"
+    },
+    "has_entities": true
+  },
+  {
+    "id": "ret_ent_068",
+    "domain": "giao_duc",
+    "query": "Nghị định 42/2013/NĐ-CP có quy định gì về Nguyên tắc hoạt động thanh tra giáo dục?",
+    "gold_sohieu": "42/2013/NĐ-CP",
+    "gold_article": "Điều 4. Nguyên tắc hoạt động thanh tra giáo dục",
+    "entities": {
+      "LoaiVanBanFilter": "nghị định",
+      "NoibanHanhFilter": "chính phủ",
+      "NgayBanHanhFilter": "2013"
+    },
+    "has_entities": true
+  },
+  {
+    "id": "ret_noent_030",
+    "domain": "giaoThong_VanTai",
+    "query": "Trách nhiệm của Cục Đăng kiểm Việt Nam có những quy định gì?",
+    "gold_sohieu": "46/2024/TT-BGTVT",
+    "gold_article": "Điều 15. Trách nhiệm của Cục Đăng kiểm Việt Nam",
+    "entities": null,
+    "has_entities": false
+  },
+  {
+    "id": "ret_noent_048",
+    "domain": "honNhan_GiaDinh",
+    "query": "Sự đồng ý cho làm con nuôi có những quy định gì?",
+    "gold_sohieu": "52/2010/QH12",
+    "gold_article": "Điều 21. Sự đồng ý cho làm con nuôi",
+    "entities": null,
+    "has_entities": false
+  },
+  {
+    "id": "ret_noent_097",
+    "domain": "honNhan_GiaDinh",
+    "query": "Quy định về xử lý hành vi vi phạm về sinh con bằng kỹ thuật hỗ trợ sinh sản và mang thai hộ ra sao?",
+    "gold_sohieu": "52/2014/QH13",
+    "gold_article": "Điều 100. Xử lý hành vi vi phạm về sinh con bằng kỹ thuật hỗ trợ sinh sản và mang thai hộ",
+    "entities": null,
+    "has_entities": false
+  },
+  {
+    "id": "ret_ent_011",
+    "domain": "honNhan_GiaDinh",
+    "query": "Luật 52/2010/QH12 quy định về Kiểm tra hồ sơ, lấy ý kiến của những người liên quan như thế nào?",
+    "gold_sohieu": "52/2010/QH12",
+    "gold_article": "Điều 20. Kiểm tra hồ sơ, lấy ý kiến của những người liên quan",
+    "entities": {
+      "LoaiVanBanFilter": "luật",
+      "NoibanHanhFilter": "quốc hội",
+      "NgayBanHanhFilter": "2010"
+    },
+    "has_entities": true
+  },
+  {
+    "id": "ret_noent_081",
+    "domain": "giao_duc",
+    "query": "Quy định về chế độ báo cáo ra sao?",
+    "gold_sohieu": "05/2021/TT-BLĐTBXH",
+    "gold_article": "Điều 20. Chế độ báo cáo",
+    "entities": null,
+    "has_entities": false
+  },
+  {
+    "id": "ret_noent_072",
+    "domain": "giao_duc",
+    "query": "Xây dựng và thực hiện quy chế của cơ sở đào tạo có những quy định gì?",
+    "gold_sohieu": "18/2021/TT-BGDĐT",
+    "gold_article": "Điều 22. Xây dựng và thực hiện quy chế của cơ sở đào tạo",
+    "entities": null,
+    "has_entities": false
+  },
+  {
+    "id": "ret_ent_087",
+    "domain": "trachNhiem_HinhSu",
+    "query": "Nghị định 37/2018/NĐ-CP quy định về Tổ chức cho người được giám sát, giáo dục thực hiện nghĩa vụ tham gia lao động tại cộng đồng như thế nào?",
+    "gold_sohieu": "37/2018/NĐ-CP",
+    "gold_article": "Điều 17. Tổ chức cho người được giám sát, giáo dục thực hiện nghĩa vụ tham gia lao động tại cộng đồng",
+    "entities": {
+      "LoaiVanBanFilter": "nghị định",
+      "NoibanHanhFilter": "chính phủ",
+      "NgayBanHanhFilter": "2018"
+    },
+    "has_entities": true
+  },
+  {
+    "id": "ret_ent_042",
+    "domain": "giaoThong_VanTai",
+    "query": "Thông tư 38/2024/TT-BGTVT có quy định gì về Khoảng cách an toàn giữa hai xe khi tham gia giao thông trên đường bộ?",
+    "gold_sohieu": "38/2024/TT-BGTVT",
+    "gold_article": "Điều 11. Khoảng cách an toàn giữa hai xe khi tham gia giao thông trên đường bộ",
+    "entities": {
+      "LoaiVanBanFilter": "thông tư",
+      "NoibanHanhFilter": "bộ giao thông vận tải",
+      "NgayBanHanhFilter": "2024"
+    },
+    "has_entities": true
+  },
+  {
+    "id": "ret_ent_098",
+    "domain": "trachNhiem_HinhSu",
+    "query": "Luật 100/2015/QH13 có quy định gì về Đương nhiên được xóa án tích?",
+    "gold_sohieu": "100/2015/QH13",
+    "gold_article": "Điều 70. Đương nhiên được xóa án tích",
+    "entities": {
+      "LoaiVanBanFilter": "luật",
+      "NoibanHanhFilter": "quốc hội",
+      "NgayBanHanhFilter": "2015"
+    },
+    "has_entities": true
+  },
+  {
+    "id": "ret_ent_015",
+    "domain": "laoDong_TienLuong",
+    "query": "Nghị định 12/2022/NĐ-CP quy định về Vi phạm quy định về đóng bảo hiểm xã hội bắt buộc, bảo hiểm thất nghiệp như thế nào?",
+    "gold_sohieu": "12/2022/NĐ-CP",
+    "gold_article": "Điều 39. Vi phạm quy định về đóng bảo hiểm xã hội bắt buộc, bảo hiểm thất nghiệp",
+    "entities": {
+      "LoaiVanBanFilter": "nghị định",
+      "NoibanHanhFilter": "chính phủ",
+      "NgayBanHanhFilter": "2022"
+    },
+    "has_entities": true
+  },
+  {
+    "id": "ret_ent_084",
+    "domain": "giao_duc",
+    "query": "Nghị định 143/2016/NĐ-CP có quy định gì về Đổi tên cơ sở giáo dục nghề nghiệp?",
+    "gold_sohieu": "143/2016/NĐ-CP",
+    "gold_article": "Điều 13. Đổi tên cơ sở giáo dục nghề nghiệp",
+    "entities": {
+      "LoaiVanBanFilter": "nghị định",
+      "NoibanHanhFilter": "chính phủ",
+      "NgayBanHanhFilter": "2016"
+    },
+    "has_entities": true
+  },
+  {
+    "id": "ret_noent_037",
+    "domain": "laoDong_TienLuong",
+    "query": "Quy định về đơn giá tiền lương khoán ra sao?",
+    "gold_sohieu": "20/2020/NĐ-CP",
+    "gold_article": "Điều 7. Đơn giá tiền lương khoán",
+    "entities": null,
+    "has_entities": false
+  },
+  {
+    "id": "ret_ent_006",
+    "domain": "giao_duc",
+    "query": "Nghị định 141/2020/NĐ-CP có quy định gì về Trách nhiệm của các Bộ?",
+    "gold_sohieu": "141/2020/NĐ-CP",
+    "gold_article": "Điều 18. Trách nhiệm của các Bộ",
+    "entities": {
+      "LoaiVanBanFilter": "nghị định",
+      "NoibanHanhFilter": "chính phủ",
+      "NgayBanHanhFilter": "2020"
+    },
+    "has_entities": true
+  },
+  {
+    "id": "ret_ent_058",
+    "domain": "giao_duc",
+    "query": "Luật 74/2014/QH13 có quy định gì về Thỉnh giảng?",
+    "gold_sohieu": "74/2014/QH13",
+    "gold_article": "Điều 57. Thỉnh giảng",
+    "entities": {
+      "LoaiVanBanFilter": "luật",
+      "NoibanHanhFilter": "quốc hội",
+      "NgayBanHanhFilter": "2014"
+    },
+    "has_entities": true
+  },
+  {
+    "id": "ret_noent_014",
+    "domain": "trachNhiem_HinhSu",
+    "query": "Thủ tục niêm yết công khai văn bản tố tụng có những quy định gì?",
+    "gold_sohieu": "101/2015/QH13",
+    "gold_article": "Điều 140. Thủ tục niêm yết công khai văn bản tố tụng",
+    "entities": null,
+    "has_entities": false
+  },
+  {
+    "id": "ret_noent_025",
+    "domain": "laoDong_TienLuong",
+    "query": "Quy định về hợp đồng cung ứng lao động ra sao?",
+    "gold_sohieu": "69/2020/QH14",
+    "gold_article": "Điều 19. Hợp đồng cung ứng lao động",
+    "entities": null,
+    "has_entities": false
+  },
+  {
+    "id": "ret_ent_066",
+    "domain": "trachNhiem_HinhSu",
+    "query": "Thông tư 64/2019/TT-BCA có quy định gì về Các trường hợp được xem xét, giải quyết thay đổi nơi cư trú?",
+    "gold_sohieu": "64/2019/TT-BCA",
+    "gold_article": "Điều 3. Các trường hợp được xem xét, giải quyết thay đổi nơi cư trú",
+    "entities": {
+      "LoaiVanBanFilter": "thông tư",
+      "NoibanHanhFilter": "bộ công an",
+      "NgayBanHanhFilter": "2019"
+    },
+    "has_entities": true
+  },
+  {
+    "id": "ret_noent_052",
+    "domain": "giaoThong_VanTai",
+    "query": "Hồ sơ đề nghị kiểm định đối với xe có chứng nhận đăng ký xe tạm thời có những quy định gì?",
+    "gold_sohieu": "47/2024/TT-BGTVT",
+    "gold_article": "Điều 9. Hồ sơ đề nghị kiểm định đối với xe có chứng nhận đăng ký xe tạm thời",
+    "entities": null,
+    "has_entities": false
+  },
+  {
+    "id": "ret_ent_074",
+    "domain": "giaoThong_VanTai",
+    "query": "Thông tư 36/2024/TT-BGTVT có quy định gì về Tổ chức, quản lý và tiêu chí điểm dừng đón, trả khách tuyến cố định?",
+    "gold_sohieu": "36/2024/TT-BGTVT",
+    "gold_article": "Điều 6. Tổ chức, quản lý và tiêu chí điểm dừng đón, trả khách tuyến cố định",
+    "entities": {
+      "LoaiVanBanFilter": "thông tư",
+      "NoibanHanhFilter": "bộ giao thông vận tải",
+      "NgayBanHanhFilter": "2024"
+    },
+    "has_entities": true
+  },
+  {
+    "id": "ret_noent_094",
+    "domain": "laoDong_TienLuong",
+    "query": "Tổ chức đối thoại lần đầu có những quy định gì?",
+    "gold_sohieu": "24/2018/NĐ-CP",
+    "gold_article": "Điều 22. Tổ chức đối thoại lần đầu",
+    "entities": null,
+    "has_entities": false
+  },
+  {
+    "id": "ret_ent_023",
+    "domain": "laoDong_TienLuong",
+    "query": "Luật 69/2020/QH14 quy định về Thời hạn thực hiện nghĩa vụ bảo lãnh như thế nào?",
+    "gold_sohieu": "69/2020/QH14",
+    "gold_article": "Điều 57. Thời hạn thực hiện nghĩa vụ bảo lãnh",
+    "entities": {
+      "LoaiVanBanFilter": "luật",
+      "NoibanHanhFilter": "quốc hội",
+      "NgayBanHanhFilter": "2020"
+    },
+    "has_entities": true
+  },
+  {
+    "id": "ret_ent_062",
+    "domain": "honNhan_GiaDinh",
+    "query": "Nghị định 82/2020/NĐ-CP có quy định gì về Hành vi vi phạm quy định về kết hôn, ly hôn và vi phạm chế độ hôn nhân một vợ, một chồng?",
+    "gold_sohieu": "82/2020/NĐ-CP",
+    "gold_article": "Điều 59. Hành vi vi phạm quy định về kết hôn, ly hôn và vi phạm chế độ hôn nhân một vợ, một chồng",
+    "entities": {
+      "LoaiVanBanFilter": "nghị định",
+      "NoibanHanhFilter": "chính phủ",
+      "NgayBanHanhFilter": "2020"
+    },
+    "has_entities": true
+  },
+  {
+    "id": "ret_ent_033",
+    "domain": "laoDong_TienLuong",
+    "query": "Luật 45/2019/QH14 quy định về Thông báo quyết định đóng cửa tạm thời nơi làm việc như thế nào?",
+    "gold_sohieu": "45/2019/QH14",
+    "gold_article": "Điều 205. Thông báo quyết định đóng cửa tạm thời nơi làm việc",
+    "entities": {
+      "LoaiVanBanFilter": "luật",
+      "NoibanHanhFilter": "quốc hội",
+      "NgayBanHanhFilter": "2019"
+    },
+    "has_entities": true
+  },
+  {
+    "id": "ret_noent_049",
+    "domain": "honNhan_GiaDinh",
+    "query": "Quy định về thu hồi Giấy phép ra sao?",
+    "gold_sohieu": "951/VBHN-BTP",
+    "gold_article": "Điều 36. Thu hồi Giấy phép",
+    "entities": null,
+    "has_entities": false
+  },
+  {
+    "id": "ret_noent_061",
+    "domain": "honNhan_GiaDinh",
+    "query": "Quy định về thỏa thuận về chế độ tài sản của vợ chồng bị vô hiệu ra sao?",
+    "gold_sohieu": "52/2014/QH13",
+    "gold_article": "Điều 50. Thỏa thuận về chế độ tài sản của vợ chồng bị vô hiệu",
+    "entities": null,
+    "has_entities": false
+  },
+  {
+    "id": "ret_noent_093",
+    "domain": "trachNhiem_HinhSu",
+    "query": "Quy định về thời hạn điều tra ra sao?",
+    "gold_sohieu": "101/2015/QH13",
+    "gold_article": "Điều 172. Thời hạn điều tra",
+    "entities": null,
+    "has_entities": false
+  },
+  {
+    "id": "ret_ent_095",
+    "domain": "giaoThong_VanTai",
+    "query": "Luật 36/2024/QH15 quy định về Sử dụng tín hiệu còi như thế nào?",
+    "gold_sohieu": "36/2024/QH15",
+    "gold_article": "Điều 21. Sử dụng tín hiệu còi",
+    "entities": {
+      "LoaiVanBanFilter": "luật",
+      "NoibanHanhFilter": "quốc hội",
+      "NgayBanHanhFilter": "2024"
+    },
+    "has_entities": true
+  },
+  {
+    "id": "ret_noent_096",
+    "domain": "trachNhiem_HinhSu",
+    "query": "Tội cản trở giao thông đường bộ có những quy định gì?",
+    "gold_sohieu": "100/2015/QH13",
+    "gold_article": "Điều 261. Tội cản trở giao thông đường bộ",
+    "entities": null,
+    "has_entities": false
+  },
+  {
+    "id": "ret_noent_060",
+    "domain": "honNhan_GiaDinh",
+    "query": "Trách nhiệm của Bộ Công an có những quy định gì?",
+    "gold_sohieu": "52/2010/QH12",
+    "gold_article": "Điều 47. Trách nhiệm của Bộ Công an",
+    "entities": null,
+    "has_entities": false
+  },
+  {
+    "id": "ret_ent_013",
+    "domain": "giao_duc",
+    "query": "Luật 74/2014/QH13 quy định về Mục tiêu của giáo dục nghề nghiệp như thế nào?",
+    "gold_sohieu": "74/2014/QH13",
+    "gold_article": "Điều 4. Mục tiêu của giáo dục nghề nghiệp",
+    "entities": {
+      "LoaiVanBanFilter": "luật",
+      "NoibanHanhFilter": "quốc hội",
+      "NgayBanHanhFilter": "2014"
+    },
+    "has_entities": true
+  },
+  {
+    "id": "ret_ent_086",
+    "domain": "giao_duc",
+    "query": "Nghị định 04/2021/NĐ-CP có quy định gì về Vi phạm quy định về cho phép hoạt động giáo dục, đăng ký hoạt động giáo dục nghề nghiệp, đăng ký hoặc công nhận thực hiện dịch vụ giáo dục?",
+    "gold_sohieu": "04/2021/NĐ-CP",
+    "gold_article": "Điều 6. Vi phạm quy định về cho phép hoạt động giáo dục, đăng ký hoạt động giáo dục nghề nghiệp, đăng ký hoặc công nhận thực hiện dịch vụ giáo dục",
+    "entities": {
+      "LoaiVanBanFilter": "nghị định",
+      "NoibanHanhFilter": "chính phủ",
+      "NgayBanHanhFilter": "2021"
+    },
+    "has_entities": true
+  },
+  {
+    "id": "ret_ent_076",
+    "domain": "laoDong_TienLuong",
+    "query": "Nghị định 76/2019/NĐ-CP có quy định gì về Trợ cấp tham quan, học tập, bồi dưỡng chuyên môn, nghiệp vụ?",
+    "gold_sohieu": "76/2019/NĐ-CP",
+    "gold_article": "Điều 10. Trợ cấp tham quan, học tập, bồi dưỡng chuyên môn, nghiệp vụ",
+    "entities": {
+      "LoaiVanBanFilter": "nghị định",
+      "NoibanHanhFilter": "chính phủ",
+      "NgayBanHanhFilter": "2019"
+    },
+    "has_entities": true
+  },
+  {
+    "id": "ret_ent_048",
+    "domain": "honNhan_GiaDinh",
+    "query": "Văn bản hợp nhất 951/VBHN-BTP có quy định gì về Hồ sơ của người nhận con nuôi?",
+    "gold_sohieu": "951/VBHN-BTP",
+    "gold_article": "Điều 13. Hồ sơ của người nhận con nuôi",
+    "entities": {
+      "LoaiVanBanFilter": "văn bản hợp nhất",
+      "NoibanHanhFilter": "bộ tư pháp",
+      "NgayBanHanhFilter": "2019"
+    },
+    "has_entities": true
+  },
+  {
+    "id": "ret_ent_031",
+    "domain": "trachNhiem_HinhSu",
+    "query": "Luật 100/2015/QH13 quy định về Tội chống loài người như thế nào?",
+    "gold_sohieu": "100/2015/QH13",
+    "gold_article": "Điều 422. Tội chống loài người",
+    "entities": {
+      "LoaiVanBanFilter": "luật",
+      "NoibanHanhFilter": "quốc hội",
+      "NgayBanHanhFilter": "2015"
+    },
+    "has_entities": true
+  },
+  {
+    "id": "ret_ent_008",
+    "domain": "trachNhiem_HinhSu",
+    "query": "Nghị định 120/2017/NĐ-CP có quy định gì về Tổ chức bếp ăn phục vụ người bị tạm giữ, người bị tạm giam?",
+    "gold_sohieu": "120/2017/NĐ-CP",
+    "gold_article": "Điều 5. Tổ chức bếp ăn phục vụ người bị tạm giữ, người bị tạm giam",
+    "entities": {
+      "LoaiVanBanFilter": "nghị định",
+      "NoibanHanhFilter": "chính phủ",
+      "NgayBanHanhFilter": "2017"
+    },
+    "has_entities": true
+  },
+  {
+    "id": "ret_noent_076",
+    "domain": "laoDong_TienLuong",
+    "query": "Điều kiện về cơ sở vật chất để tổ chức giáo dục định hướng cho người lao động có những quy định gì?",
+    "gold_sohieu": "112/2021/NĐ-CP",
+    "gold_article": "Điều 5. Điều kiện về cơ sở vật chất để tổ chức giáo dục định hướng cho người lao động",
+    "entities": null,
+    "has_entities": false
+  },
+  {
+    "id": "ret_noent_057",
+    "domain": "giaoThong_VanTai",
+    "query": "Quy định về trách nhiệm của cơ quan cấp giấy phép lưu hành xe ra sao?",
+    "gold_sohieu": "39/2024/TT-BGTVT",
+    "gold_article": "Điều 25. Trách nhiệm của cơ quan cấp giấy phép lưu hành xe",
+    "entities": null,
+    "has_entities": false
+  },
+  {
+    "id": "ret_ent_056",
+    "domain": "honNhan_GiaDinh",
+    "query": "Luật 52/2014/QH13 có quy định gì về Nguyên tắc chung về chế độ tài sản của vợ chồng?",
+    "gold_sohieu": "52/2014/QH13",
+    "gold_article": "Điều 29. Nguyên tắc chung về chế độ tài sản của vợ chồng",
+    "entities": {
+      "LoaiVanBanFilter": "luật",
+      "NoibanHanhFilter": "quốc hội",
+      "NgayBanHanhFilter": "2014"
+    },
+    "has_entities": true
+  },
+  {
+    "id": "ret_ent_039",
+    "domain": "giaoThong_VanTai",
+    "query": "Thông tư 36/2024/TT-BGTVT quy định về Quy định đối với xe ô tô kinh doanh vận tải hành khách theo hợp đồng như thế nào?",
+    "gold_sohieu": "36/2024/TT-BGTVT",
+    "gold_article": "Điều 30. Quy định đối với xe ô tô kinh doanh vận tải hành khách theo hợp đồng",
+    "entities": {
+      "LoaiVanBanFilter": "thông tư",
+      "NoibanHanhFilter": "bộ giao thông vận tải",
+      "NgayBanHanhFilter": "2024"
+    },
+    "has_entities": true
+  },
+  {
+    "id": "ret_noent_006",
+    "domain": "laoDong_TienLuong",
+    "query": "Tiền ký quỹ của người lao động có những quy định gì?",
+    "gold_sohieu": "69/2020/QH14",
+    "gold_article": "Điều 25. Tiền ký quỹ của người lao động",
+    "entities": null,
+    "has_entities": false
+  },
+  {
+    "id": "ret_noent_028",
+    "domain": "giaoThong_VanTai",
+    "query": "Công bố mở tuyến vận tải hành khách công cộng bằng xe buýt có những quy định gì?",
+    "gold_sohieu": "36/2024/TT-BGTVT",
+    "gold_article": "Điều 19. Công bố mở tuyến vận tải hành khách công cộng bằng xe buýt",
+    "entities": null,
+    "has_entities": false
+  },
+  {
+    "id": "ret_ent_010",
+    "domain": "giaoThong_VanTai",
+    "query": "Thông tư 79/2024/TT-BCA có quy định gì về Hồ sơ đăng ký, cấp biển số xe trúng đấu giá?",
+    "gold_sohieu": "79/2024/TT-BCA",
+    "gold_article": "Điều 28. Hồ sơ đăng ký, cấp biển số xe trúng đấu giá",
+    "entities": {
+      "LoaiVanBanFilter": "thông tư",
+      "NoibanHanhFilter": "bộ công an",
+      "NgayBanHanhFilter": "2024"
+    },
+    "has_entities": true
+  },
+  {
+    "id": "ret_ent_063",
+    "domain": "giaoThong_VanTai",
+    "query": "Thông tư 45/2024/TT-BGTVT quy định về Trách nhiệm của cơ sở đăng kiểm đề nghị cấp mới, cấp lại chứng chỉ đăng kiểm viên như thế nào?",
+    "gold_sohieu": "45/2024/TT-BGTVT",
+    "gold_article": "Điều 17. Trách nhiệm của cơ sở đăng kiểm đề nghị cấp mới, cấp lại chứng chỉ đăng kiểm viên",
+    "entities": {
+      "LoaiVanBanFilter": "thông tư",
+      "NoibanHanhFilter": "bộ giao thông vận tải",
+      "NgayBanHanhFilter": "2024"
+    },
+    "has_entities": true
+  },
+  {
+    "id": "ret_ent_024",
+    "domain": "honNhan_GiaDinh",
+    "query": "Nghị định 167/2013/NĐ-CP có quy định gì về Vi phạm quy định về quyết định cấm tiếp xúc của Chủ tịch Ủy ban nhân dân cấp xã?",
+    "gold_sohieu": "167/2013/NĐ-CP",
+    "gold_article": "Điều 65. Vi phạm quy định về quyết định cấm tiếp xúc của Chủ tịch Ủy ban nhân dân cấp xã",
+    "entities": {
+      "LoaiVanBanFilter": "nghị định",
+      "NoibanHanhFilter": "chính phủ",
+      "NgayBanHanhFilter": "2013"
+    },
+    "has_entities": true
+  },
+  {
+    "id": "ret_ent_025",
+    "domain": "trachNhiem_HinhSu",
+    "query": "Luật 100/2015/QH13 quy định về Tội điều động hoặc giao cho người không đủ điều kiện điều khiển tàu bay như thế nào?",
+    "gold_sohieu": "100/2015/QH13",
+    "gold_article": "Điều 280. Tội điều động hoặc giao cho người không đủ điều kiện điều khiển tàu bay",
+    "entities": {
+      "LoaiVanBanFilter": "luật",
+      "NoibanHanhFilter": "quốc hội",
+      "NgayBanHanhFilter": "2015"
+    },
+    "has_entities": true
+  },
+  {
+    "id": "ret_noent_084",
+    "domain": "trachNhiem_HinhSu",
+    "query": "Tuổi chịu trách nhiệm hình sự có những quy định gì?",
+    "gold_sohieu": "100/2015/QH13",
+    "gold_article": "Điều 12. Tuổi chịu trách nhiệm hình sự",
+    "entities": null,
+    "has_entities": false
+  },
+  {
+    "id": "ret_ent_041",
+    "domain": "trachNhiem_HinhSu",
+    "query": "Luật 101/2015/QH13 quy định về Xét xử trực tiếp, bằng lời nói và liên tục như thế nào?",
+    "gold_sohieu": "101/2015/QH13",
+    "gold_article": "Điều 250. Xét xử trực tiếp, bằng lời nói và liên tục",
+    "entities": {
+      "LoaiVanBanFilter": "luật",
+      "NoibanHanhFilter": "quốc hội",
+      "NgayBanHanhFilter": "2015"
+    },
+    "has_entities": true
+  },
+  {
+    "id": "ret_ent_055",
+    "domain": "giaoThong_VanTai",
+    "query": "Nghị định 158/2024/NĐ-CP quy định về Quy định đối với vận tải người nội bộ bằng xe bốn bánh có gắn động cơ như thế nào?",
+    "gold_sohieu": "158/2024/NĐ-CP",
+    "gold_article": "Điều 26. Quy định đối với vận tải người nội bộ bằng xe bốn bánh có gắn động cơ",
+    "entities": {
+      "LoaiVanBanFilter": "nghị định",
+      "NoibanHanhFilter": "chính phủ",
+      "NgayBanHanhFilter": "2024"
+    },
+    "has_entities": true
+  },
+  {
+    "id": "ret_ent_001",
+    "domain": "giao_duc",
+    "query": "Luật 30/2013/QH13 quy định về Đối với đối tượng trong cơ quan, tổ chức của Nhà nước, tổ chức chính trị, tổ chức chính trị - xã hội như thế nào?",
+    "gold_sohieu": "30/2013/QH13",
+    "gold_article": "Điều 14. Đối với đối tượng trong cơ quan, tổ chức của Nhà nước, tổ chức chính trị, tổ chức chính trị - xã hội",
+    "entities": {
+      "LoaiVanBanFilter": "luật",
+      "NoibanHanhFilter": "quốc hội",
+      "NgayBanHanhFilter": "2013"
+    },
+    "has_entities": true
+  },
+  {
+    "id": "ret_ent_082",
+    "domain": "honNhan_GiaDinh",
+    "query": "Luật 02/2007/QH12 có quy định gì về Trách nhiệm của Bộ Lao động, Thương binh và Xã hội?",
+    "gold_sohieu": "02/2007/QH12",
+    "gold_article": "Điều 38. Trách nhiệm của Bộ Lao động, Thương binh và Xã hội",
+    "entities": {
+      "LoaiVanBanFilter": "luật",
+      "NoibanHanhFilter": "quốc hội",
+      "NgayBanHanhFilter": "2007"
+    },
+    "has_entities": true
+  },
+  {
+    "id": "ret_noent_045",
+    "domain": "giaoThong_VanTai",
+    "query": "Quy định về mở cửa xe ra sao?",
+    "gold_sohieu": "36/2024/QH15",
+    "gold_article": "Điều 19. Mở cửa xe",
+    "entities": null,
+    "has_entities": false
+  },
+  {
+    "id": "ret_noent_047",
+    "domain": "laoDong_TienLuong",
+    "query": "Quy định về phương án sử dụng lao động ra sao?",
+    "gold_sohieu": "45/2019/QH14",
+    "gold_article": "Điều 44. Phương án sử dụng lao động",
+    "entities": null,
+    "has_entities": false
+  },
+  {
+    "id": "ret_noent_041",
+    "domain": "giao_duc",
+    "query": "Quy định về công nhận cơ sở giáo dục đại học định hướng nghiên cứu ra sao?",
+    "gold_sohieu": "99/2019/NĐ-CP",
+    "gold_article": "Điều 10. Công nhận cơ sở giáo dục đại học định hướng nghiên cứu",
+    "entities": null,
+    "has_entities": false
+  },
+  {
+    "id": "ret_noent_077",
+    "domain": "giao_duc",
+    "query": "Quy định về ưu tiên đầu tư tài chính và đất đai xây dựng trường học ra sao?",
+    "gold_sohieu": "43/2019/QH14",
+    "gold_article": "Điều 97. Ưu tiên đầu tư tài chính và đất đai xây dựng trường học",
+    "entities": null,
+    "has_entities": false
+  },
+  {
+    "id": "ret_ent_019",
+    "domain": "giaoThong_VanTai",
+    "query": "Nghị định 158/2024/NĐ-CP quy định về Quy định đối với vận tải hàng hóa nội bộ bằng xe bốn bánh có gắn động cơ như thế nào?",
+    "gold_sohieu": "158/2024/NĐ-CP",
+    "gold_article": "Điều 27. Quy định đối với vận tải hàng hóa nội bộ bằng xe bốn bánh có gắn động cơ",
+    "entities": {
+      "LoaiVanBanFilter": "nghị định",
+      "NoibanHanhFilter": "chính phủ",
+      "NgayBanHanhFilter": "2024"
+    },
+    "has_entities": true
+  },
+  {
+    "id": "ret_ent_085",
+    "domain": "giaoThong_VanTai",
+    "query": "Luật 35/2024/QH15 quy định về Phí sử dụng đường cao tốc như thế nào?",
+    "gold_sohieu": "35/2024/QH15",
+    "gold_article": "Điều 50. Phí sử dụng đường cao tốc",
+    "entities": {
+      "LoaiVanBanFilter": "luật",
+      "NoibanHanhFilter": "quốc hội",
+      "NgayBanHanhFilter": "2024"
+    },
+    "has_entities": true
+  },
+  {
+    "id": "ret_ent_036",
+    "domain": "giao_duc",
+    "query": "Nghị định 79/2015/NĐ-CP có quy định gì về Vi phạm quy định sử dụng giáo trình, tài liệu giảng dạy?",
+    "gold_sohieu": "79/2015/NĐ-CP",
+    "gold_article": "Điều 23. Vi phạm quy định sử dụng giáo trình, tài liệu giảng dạy",
+    "entities": {
+      "LoaiVanBanFilter": "nghị định",
+      "NoibanHanhFilter": "chính phủ",
+      "NgayBanHanhFilter": "2015"
+    },
+    "has_entities": true
+  },
+  {
+    "id": "ret_noent_059",
+    "domain": "honNhan_GiaDinh",
+    "query": "Quy định về bồi thường thiệt hại do con gây ra ra sao?",
+    "gold_sohieu": "52/2014/QH13",
+    "gold_article": "Điều 74. Bồi thường thiệt hại do con gây ra",
+    "entities": null,
+    "has_entities": false
+  },
+  {
+    "id": "ret_ent_012",
+    "domain": "trachNhiem_HinhSu",
+    "query": "Luật 99/2015/QH13 có quy định gì về Nhiệm vụ, quyền hạn Điều tra của Kiểm ngư?",
+    "gold_sohieu": "99/2015/QH13",
+    "gold_article": "Điều 36. Nhiệm vụ, quyền hạn Điều tra của Kiểm ngư",
+    "entities": {
+      "LoaiVanBanFilter": "luật",
+      "NoibanHanhFilter": "quốc hội",
+      "NgayBanHanhFilter": "2015"
+    },
+    "has_entities": true
+  },
+  {
+    "id": "ret_ent_053",
+    "domain": "laoDong_TienLuong",
+    "query": "Thông tư 28/2021/TT-BLĐTBXH quy định về Quy trình thực  hiện cấp tiền mua  phương  tiện trợ giúp sinh hoạt, dụng cụ chỉnh hình như thế nào?",
+    "gold_sohieu": "28/2021/TT-BLĐTBXH",
+    "gold_article": "Điều 13. Quy trình thực  hiện cấp tiền mua  phương  tiện trợ giúp sinh hoạt, dụng cụ chỉnh hình",
+    "entities": {
+      "LoaiVanBanFilter": "thông tư",
+      "NoibanHanhFilter": "bộ lao động - thương binh và xã hội",
+      "NgayBanHanhFilter": "2021"
+    },
+    "has_entities": true
+  },
+  {
+    "id": "ret_ent_077",
+    "domain": "honNhan_GiaDinh",
+    "query": "Luật 60/2014/QH13 quy định về Trách nhiệm của Bộ Tư pháp như thế nào?",
+    "gold_sohieu": "60/2014/QH13",
+    "gold_article": "Điều 66. Trách nhiệm của Bộ Tư pháp",
+    "entities": {
+      "LoaiVanBanFilter": "luật",
+      "NoibanHanhFilter": "quốc hội",
+      "NgayBanHanhFilter": "2014"
+    },
+    "has_entities": true
+  },
+  {
+    "id": "ret_ent_059",
+    "domain": "trachNhiem_HinhSu",
+    "query": "Luật 41/2019/QH14 quy định về Nhiệm vụ, quyền hạn của Ủy ban nhân dân cấp xã, đơn vị quân đội được giao giám sát, giáo dục người được hưởng án treo như thế nào?",
+    "gold_sohieu": "41/2019/QH14",
+    "gold_article": "Điều 86. Nhiệm vụ, quyền hạn của Ủy ban nhân dân cấp xã, đơn vị quân đội được giao giám sát, giáo dục người được hưởng án treo",
+    "entities": {
+      "LoaiVanBanFilter": "luật",
+      "NoibanHanhFilter": "quốc hội",
+      "NgayBanHanhFilter": "2019"
+    },
+    "has_entities": true
+  },
+  {
+    "id": "ret_ent_057",
+    "domain": "honNhan_GiaDinh",
+    "query": "Luật 52/2014/QH13 quy định về Thuận tình ly hôn như thế nào?",
+    "gold_sohieu": "52/2014/QH13",
+    "gold_article": "Điều 55. Thuận tình ly hôn",
+    "entities": {
+      "LoaiVanBanFilter": "luật",
+      "NoibanHanhFilter": "quốc hội",
+      "NgayBanHanhFilter": "2014"
+    },
+    "has_entities": true
+  },
+  {
+    "id": "ret_ent_083",
+    "domain": "honNhan_GiaDinh",
+    "query": "Luật 02/2007/QH12 quy định về Nguyên tắc phòng, chống bạo lực gia đình như thế nào?",
+    "gold_sohieu": "02/2007/QH12",
+    "gold_article": "Điều 3. Nguyên tắc phòng, chống bạo lực gia đình",
+    "entities": {
+      "LoaiVanBanFilter": "luật",
+      "NoibanHanhFilter": "quốc hội",
+      "NgayBanHanhFilter": "2007"
+    },
+    "has_entities": true
+  },
+  {
+    "id": "ret_ent_029",
+    "domain": "honNhan_GiaDinh",
+    "query": "Văn bản hợp nhất 02/VBHN-BYT quy định về Cơ sở khám bệnh, chữa bệnh được thực hiện kỹ thuật thụ tinh trong ống nghiệm như thế nào?",
+    "gold_sohieu": "02/VBHN-BYT",
+    "gold_article": "Điều 7. Cơ sở khám bệnh, chữa bệnh được thực hiện kỹ thuật thụ tinh trong ống nghiệm",
+    "entities": {
+      "LoaiVanBanFilter": "văn bản hợp nhất",
+      "NoibanHanhFilter": "bộ y tế",
+      "NgayBanHanhFilter": "2019"
+    },
+    "has_entities": true
+  },
+  {
+    "id": "ret_ent_094",
+    "domain": "honNhan_GiaDinh",
+    "query": "Nghị định 123/2015/NĐ-CP có quy định gì về Đăng ký kết hôn?",
+    "gold_sohieu": "123/2015/NĐ-CP",
+    "gold_article": "Điều 18. Đăng ký kết hôn",
+    "entities": {
+      "LoaiVanBanFilter": "nghị định",
+      "NoibanHanhFilter": "chính phủ",
+      "NgayBanHanhFilter": "2015"
+    },
+    "has_entities": true
+  },
+  {
+    "id": "ret_ent_026",
+    "domain": "giaoThong_VanTai",
+    "query": "Luật 35/2024/QH15 có quy định gì về Thi công xây dựng, sửa chữa đoạn đường giao nhau đồng mức giữa đường bộ với đường sắt; thi công sửa chữa mặt cầu đường bộ đi chung với đường sắt, đường bộ giao cắt với đường sắt?",
+    "gold_sohieu": "35/2024/QH15",
+    "gold_article": "Điều 33. Thi công xây dựng, sửa chữa đoạn đường giao nhau đồng mức giữa đường bộ với đường sắt; thi công sửa chữa mặt cầu đường bộ đi chung với đường sắt, đường bộ giao cắt với đường sắt",
+    "entities": {
+      "LoaiVanBanFilter": "luật",
+      "NoibanHanhFilter": "quốc hội",
+      "NgayBanHanhFilter": "2024"
+    },
+    "has_entities": true
+  },
+  {
+    "id": "ret_ent_079",
+    "domain": "trachNhiem_HinhSu",
+    "query": "Luật 101/2015/QH13 quy định về Giải quyết yêu cầu điều tra bổ sung của Tòa án như thế nào?",
+    "gold_sohieu": "101/2015/QH13",
+    "gold_article": "Điều 246. Giải quyết yêu cầu điều tra bổ sung của Tòa án",
+    "entities": {
+      "LoaiVanBanFilter": "luật",
+      "NoibanHanhFilter": "quốc hội",
+      "NgayBanHanhFilter": "2015"
+    },
+    "has_entities": true
+  },
+  {
+    "id": "ret_ent_035",
+    "domain": "honNhan_GiaDinh",
+    "query": "Luật 52/2014/QH13 quy định về Tài sản riêng của vợ, chồng như thế nào?",
+    "gold_sohieu": "52/2014/QH13",
+    "gold_article": "Điều 43. Tài sản riêng của vợ, chồng",
+    "entities": {
+      "LoaiVanBanFilter": "luật",
+      "NoibanHanhFilter": "quốc hội",
+      "NgayBanHanhFilter": "2014"
+    },
+    "has_entities": true
+  },
+  {
+    "id": "ret_noent_012",
+    "domain": "laoDong_TienLuong",
+    "query": "Thẩm quyền xử phạt của Thanh tra lao động có những quy định gì?",
+    "gold_sohieu": "12/2022/NĐ-CP",
+    "gold_article": "Điều 49. Thẩm quyền xử phạt của Thanh tra lao động",
+    "entities": null,
+    "has_entities": false
+  },
+  {
+    "id": "ret_ent_070",
+    "domain": "trachNhiem_HinhSu",
+    "query": "Nghị định 43/2020/NĐ-CP có quy định gì về Chi phí mai táng?",
+    "gold_sohieu": "43/2020/NĐ-CP",
+    "gold_article": "Điều 7. Chi phí mai táng",
+    "entities": {
+      "LoaiVanBanFilter": "nghị định",
+      "NoibanHanhFilter": "chính phủ",
+      "NgayBanHanhFilter": "2020"
+    },
+    "has_entities": true
+  },
+  {
+    "id": "ret_noent_008",
+    "domain": "giao_duc",
+    "query": "Thời gian xét tặng và công bố danh hiệu “Nhà giáo Nhân dân”, “Nhà giáo Ưu tú” có những quy định gì?",
+    "gold_sohieu": "27/2015/NĐ-CP",
+    "gold_article": "Điều 4. Thời gian xét tặng và công bố danh hiệu “Nhà giáo Nhân dân”, “Nhà giáo Ưu tú”",
+    "entities": null,
+    "has_entities": false
+  },
+  {
+    "id": "ret_noent_005",
+    "domain": "giao_duc",
+    "query": "Quy định về vi phạm quy định về kiểm tra, thi, xét công nhận tốt nghiệp ra sao?",
+    "gold_sohieu": "79/2015/NĐ-CP",
+    "gold_article": "Điều 15. Vi phạm quy định về kiểm tra, thi, xét công nhận tốt nghiệp",
+    "entities": null,
+    "has_entities": false
+  },
+  {
+    "id": "ret_noent_040",
+    "domain": "giaoThong_VanTai",
+    "query": "Phòng ngừa thiên tai đối với công trình đường bộ đã đưa vào khai thác, sử dụng có những quy định gì?",
+    "gold_sohieu": "40/2024/TT-BGTVT",
+    "gold_article": "Điều 8. Phòng ngừa thiên tai đối với công trình đường bộ đã đưa vào khai thác, sử dụng",
+    "entities": null,
+    "has_entities": false
+  },
+  {
+    "id": "ret_noent_091",
+    "domain": "honNhan_GiaDinh",
+    "query": "Quy định về giấy tờ nộp và xuất trình khi đăng ký kết hôn ra sao?",
+    "gold_sohieu": "123/2015/NĐ-CP",
+    "gold_article": "Điều 10. Giấy tờ nộp và xuất trình khi đăng ký kết hôn",
+    "entities": null,
+    "has_entities": false
+  },
+  {
+    "id": "ret_noent_095",
+    "domain": "honNhan_GiaDinh",
+    "query": "Quy định về cơ quan quản lý nhà nước về nuôi con nuôi ra sao?",
+    "gold_sohieu": "52/2010/QH12",
+    "gold_article": "Điều 44. Cơ quan quản lý nhà nước về nuôi con nuôi",
+    "entities": null,
+    "has_entities": false
+  },
+  {
+    "id": "ret_noent_090",
+    "domain": "giaoThong_VanTai",
+    "query": "Định giá dịch vụ sử dụng phà có những quy định gì?",
+    "gold_sohieu": "33/2024/TT-BGTVT",
+    "gold_article": "Điều 4. Định giá dịch vụ sử dụng phà",
+    "entities": null,
+    "has_entities": false
+  },
+  {
+    "id": "ret_ent_028",
+    "domain": "giaoThong_VanTai",
+    "query": "Thông tư 34/2024/TT-BGTVT có quy định gì về Trách nhiệm của cơ quan quản lý Nhà nước?",
+    "gold_sohieu": "34/2024/TT-BGTVT",
+    "gold_article": "Điều 20. Trách nhiệm của cơ quan quản lý Nhà nước",
+    "entities": {
+      "LoaiVanBanFilter": "thông tư",
+      "NoibanHanhFilter": "bộ giao thông vận tải",
+      "NgayBanHanhFilter": "2024"
+    },
+    "has_entities": true
+  },
+  {
+    "id": "ret_ent_078",
+    "domain": "giaoThong_VanTai",
+    "query": "Nghị định 168/2024/NĐ-CP có quy định gì về Xử phạt, trừ điểm giấy phép lái xe của người điều khiển xe cứu hộ giao thông đường bộ?",
+    "gold_sohieu": "168/2024/NĐ-CP",
+    "gold_article": "Điều 29. Xử phạt, trừ điểm giấy phép lái xe của người điều khiển xe cứu hộ giao thông đường bộ",
+    "entities": {
+      "LoaiVanBanFilter": "nghị định",
+      "NoibanHanhFilter": "chính phủ",
+      "NgayBanHanhFilter": "2024"
+    },
+    "has_entities": true
+  },
+  {
+    "id": "ret_noent_024",
+    "domain": "giao_duc",
+    "query": "Tổ chức kinh doanh dịch vụ tư vấn du học có những quy định gì?",
+    "gold_sohieu": "46/2017/NĐ-CP",
+    "gold_article": "Điều 106. Tổ chức kinh doanh dịch vụ tư vấn du học",
+    "entities": null,
+    "has_entities": false
+  },
+  {
+    "id": "ret_noent_050",
+    "domain": "trachNhiem_HinhSu",
+    "query": "Tranh tụng trong xét xử được bảo đảm có những quy định gì?",
+    "gold_sohieu": "101/2015/QH13",
+    "gold_article": "Điều 26. Tranh tụng trong xét xử được bảo đảm",
+    "entities": null,
+    "has_entities": false
+  },
+  {
+    "id": "ret_noent_086",
+    "domain": "laoDong_TienLuong",
+    "query": "Thẩm quyền quản lý nhà nước về lao động có những quy định gì?",
+    "gold_sohieu": "45/2019/QH14",
+    "gold_article": "Điều 213. Thẩm quyền quản lý nhà nước về lao động",
+    "entities": null,
+    "has_entities": false
+  },
+  {
+    "id": "ret_noent_098",
+    "domain": "trachNhiem_HinhSu",
+    "query": "Thu thập, cập nhật, điều chỉnh, quản lý, kết nối, chia sẻ, khai thác thông tin trong Cơ sở dữ liệu căn cước có những quy định gì?",
+    "gold_sohieu": "26/2023/QH15",
+    "gold_article": "Điều 16. Thu thập, cập nhật, điều chỉnh, quản lý, kết nối, chia sẻ, khai thác thông tin trong Cơ sở dữ liệu căn cước",
+    "entities": null,
+    "has_entities": false
+  },
+  {
+    "id": "ret_ent_100",
+    "domain": "laoDong_TienLuong",
+    "query": "Thông tư 29/2021/TT-BLĐTBXH có quy định gì về Trách nhiệm của Sở Lao động - Thương binh và Xã hội?",
+    "gold_sohieu": "29/2021/TT-BLĐTBXH",
+    "gold_article": "Điều 8. Trách nhiệm của Sở Lao động - Thương binh và Xã hội",
+    "entities": {
+      "LoaiVanBanFilter": "thông tư",
+      "NoibanHanhFilter": "bộ lao động - thương binh và xã hội",
+      "NgayBanHanhFilter": "2021"
+    },
+    "has_entities": true
+  },
+  {
+    "id": "ret_noent_073",
+    "domain": "laoDong_TienLuong",
+    "query": "Quy định về hỗ trợ đưa người lao động đi làm việc ở nước ngoài theo hợp đồng ra sao?",
+    "gold_sohieu": "38/2013/QH13",
+    "gold_article": "Điều 20. Hỗ trợ đưa người lao động đi làm việc ở nước ngoài theo hợp đồng",
+    "entities": null,
+    "has_entities": false
+  },
+  {
+    "id": "ret_noent_036",
+    "domain": "honNhan_GiaDinh",
+    "query": "Nghĩa vụ, quyền của cha, mẹ trực tiếp nuôi con đối với người không trực tiếp nuôi con sau khi ly hôn có những quy định gì?",
+    "gold_sohieu": "52/2014/QH13",
+    "gold_article": "Điều 83. Nghĩa vụ, quyền của cha, mẹ trực tiếp nuôi con đối với người không trực tiếp nuôi con sau khi ly hôn",
+    "entities": null,
+    "has_entities": false
+  },
+  {
+    "id": "ret_noent_001",
+    "domain": "giao_duc",
+    "query": "Quy định về hồ sơ đăng ký hoạt động giáo dục ra sao?",
+    "gold_sohieu": "86/2018/NĐ-CP",
+    "gold_article": "Điều 46. Hồ sơ đăng ký hoạt động giáo dục",
+    "entities": null,
+    "has_entities": false
+  },
+  {
+    "id": "ret_ent_096",
+    "domain": "honNhan_GiaDinh",
+    "query": "Nghị định 82/2020/NĐ-CP có quy định gì về Hành vi vi phạm quy định của người tham gia đấu giá, người có tài sản đấu giá và người khác có liên quan đến hoạt động đấu giá tài sản?",
+    "gold_sohieu": "82/2020/NĐ-CP",
+    "gold_article": "Điều 23. Hành vi vi phạm quy định của người tham gia đấu giá, người có tài sản đấu giá và người khác có liên quan đến hoạt động đấu giá tài sản",
+    "entities": {
+      "LoaiVanBanFilter": "nghị định",
+      "NoibanHanhFilter": "chính phủ",
+      "NgayBanHanhFilter": "2020"
+    },
+    "has_entities": true
+  },
+  {
+    "id": "ret_ent_021",
+    "domain": "giao_duc",
+    "query": "Luật 08/2012/QH13 quy định về Các hành vi người học không được làm như thế nào?",
+    "gold_sohieu": "08/2012/QH13",
+    "gold_article": "Điều 61. Các hành vi người học không được làm",
+    "entities": {
+      "LoaiVanBanFilter": "luật",
+      "NoibanHanhFilter": "quốc hội",
+      "NgayBanHanhFilter": "2012"
+    },
+    "has_entities": true
+  },
+  {
+    "id": "ret_noent_018",
+    "domain": "laoDong_TienLuong",
+    "query": "Tiền lương làm căn cứ thực hiện bồi thường, trợ cấp và trả cho người lao động nghỉ việc do tai nạn lao động, bệnh nghề nghiệp có những quy định gì?",
+    "gold_sohieu": "28/2021/TT-BLĐTBXH",
+    "gold_article": "Điều 5. Tiền lương làm căn cứ thực hiện bồi thường, trợ cấp và trả cho người lao động nghỉ việc do tai nạn lao động, bệnh nghề nghiệp",
+    "entities": null,
+    "has_entities": false
+  },
+  {
+    "id": "ret_noent_063",
+    "domain": "honNhan_GiaDinh",
+    "query": "Quy định về hồ sơ đề nghị thực hiện kỹ thuật mang thai hộ vì mục đích nhân đạo ra sao?",
+    "gold_sohieu": "02/VBHN-BYT",
+    "gold_article": "Điều 14. Hồ sơ đề nghị thực hiện kỹ thuật mang thai hộ vì mục đích nhân đạo",
+    "entities": null,
+    "has_entities": false
+  },
+  {
+    "id": "ret_noent_035",
+    "domain": "giao_duc",
+    "query": "Quy định về đề nghị Mặt trận Tổ quốc Việt Nam và các tổ chức thành viên của Mặt trận ra sao?",
+    "gold_sohieu": "80/2017/NĐ-CP",
+    "gold_article": "Điều 14. Đề nghị Mặt trận Tổ quốc Việt Nam và các tổ chức thành viên của Mặt trận",
+    "entities": null,
+    "has_entities": false
+  },
+  {
+    "id": "ret_ent_067",
+    "domain": "trachNhiem_HinhSu",
+    "query": "Luật 41/2019/QH14 quy định về Chế độ hoạt động thể dục, thể thao, sinh hoạt văn hóa, văn nghệ và sử dụng kinh sách, bày tỏ niềm tin tín ngưỡng, tôn giáo của phạm nhân như thế nào?",
+    "gold_sohieu": "41/2019/QH14",
+    "gold_article": "Điều 50. Chế độ hoạt động thể dục, thể thao, sinh hoạt văn hóa, văn nghệ và sử dụng kinh sách, bày tỏ niềm tin tín ngưỡng, tôn giáo của phạm nhân",
+    "entities": {
+      "LoaiVanBanFilter": "luật",
+      "NoibanHanhFilter": "quốc hội",
+      "NgayBanHanhFilter": "2019"
+    },
+    "has_entities": true
+  },
+  {
+    "id": "ret_ent_045",
+    "domain": "trachNhiem_HinhSu",
+    "query": "Luật 99/2015/QH13 quy định về Tổ chức bộ máy của Cơ quan Điều tra hình sự trong Quân đội nhân dân như thế nào?",
+    "gold_sohieu": "99/2015/QH13",
+    "gold_article": "Điều 25. Tổ chức bộ máy của Cơ quan Điều tra hình sự trong Quân đội nhân dân",
+    "entities": {
+      "LoaiVanBanFilter": "luật",
+      "NoibanHanhFilter": "quốc hội",
+      "NgayBanHanhFilter": "2015"
+    },
+    "has_entities": true
+  },
+  {
+    "id": "ret_noent_075",
+    "domain": "trachNhiem_HinhSu",
+    "query": "Quy định về tội gây rối trật tự phiên tòa, phiên họp ra sao?",
+    "gold_sohieu": "100/2015/QH13",
+    "gold_article": "Điều 391. Tội gây rối trật tự phiên tòa, phiên họp",
+    "entities": null,
+    "has_entities": false
+  },
+  {
+    "id": "ret_ent_051",
+    "domain": "trachNhiem_HinhSu",
+    "query": "Luật 99/2015/QH13 quy định về Cơ quan Điều tra trong Quân đội nhân dân như thế nào?",
+    "gold_sohieu": "99/2015/QH13",
+    "gold_article": "Điều 6. Cơ quan Điều tra trong Quân đội nhân dân",
+    "entities": {
+      "LoaiVanBanFilter": "luật",
+      "NoibanHanhFilter": "quốc hội",
+      "NgayBanHanhFilter": "2015"
+    },
+    "has_entities": true
+  },
+  {
+    "id": "ret_ent_038",
+    "domain": "giao_duc",
+    "query": "Nghị định 13/2014/NĐ-CP có quy định gì về Nguồn kinh phí cho giáo dục quốc phòng và an ninh?",
+    "gold_sohieu": "13/2014/NĐ-CP",
+    "gold_article": "Điều 8. Nguồn kinh phí cho giáo dục quốc phòng và an ninh",
+    "entities": {
+      "LoaiVanBanFilter": "nghị định",
+      "NoibanHanhFilter": "chính phủ",
+      "NgayBanHanhFilter": "2014"
+    },
+    "has_entities": true
+  },
+  {
+    "id": "ret_ent_020",
+    "domain": "trachNhiem_HinhSu",
+    "query": "Luật 100/2015/QH13 có quy định gì về Tội mua dâm người dưới 18 tuổi?",
+    "gold_sohieu": "100/2015/QH13",
+    "gold_article": "Điều 329. Tội mua dâm người dưới 18 tuổi",
+    "entities": {
+      "LoaiVanBanFilter": "luật",
+      "NoibanHanhFilter": "quốc hội",
+      "NgayBanHanhFilter": "2015"
+    },
+    "has_entities": true
+  },
+  {
+    "id": "ret_noent_015",
+    "domain": "giao_duc",
+    "query": "Quy định về vi phạm quy định về hoạt động đánh giá kỹ năng nghề quốc gia ra sao?",
+    "gold_sohieu": "79/2015/NĐ-CP",
+    "gold_article": "Điều 26. Vi phạm quy định về hoạt động đánh giá kỹ năng nghề quốc gia",
+    "entities": null,
+    "has_entities": false
+  },
+  {
+    "id": "ret_ent_072",
+    "domain": "laoDong_TienLuong",
+    "query": "Nghị định 24/2018/NĐ-CP có quy định gì về Rút khiếu nại?",
+    "gold_sohieu": "24/2018/NĐ-CP",
+    "gold_article": "Điều 8. Rút khiếu nại",
+    "entities": {
+      "LoaiVanBanFilter": "nghị định",
+      "NoibanHanhFilter": "chính phủ",
+      "NgayBanHanhFilter": "2018"
+    },
+    "has_entities": true
+  },
+  {
+    "id": "ret_ent_081",
+    "domain": "giaoThong_VanTai",
+    "query": "Thông tư 40/2024/TT-BGTVT quy định về Quản lý, sử dụng, thanh toán, quyết toán kinh phí như thế nào?",
+    "gold_sohieu": "40/2024/TT-BGTVT",
+    "gold_article": "Điều 19. Quản lý, sử dụng, thanh toán, quyết toán kinh phí",
+    "entities": {
+      "LoaiVanBanFilter": "thông tư",
+      "NoibanHanhFilter": "bộ giao thông vận tải",
+      "NgayBanHanhFilter": "2024"
+    },
+    "has_entities": true
+  },
+  {
+    "id": "ret_noent_085",
+    "domain": "giao_duc",
+    "query": "Quy định về vi phạm quy định về điều kiện bảo đảm chất lượng hoặc bảo đảm điều kiện an toàn về cơ sở vật chất trường, lớp học ra sao?",
+    "gold_sohieu": "04/2021/NĐ-CP",
+    "gold_article": "Điều 33. Vi phạm quy định về điều kiện bảo đảm chất lượng hoặc bảo đảm điều kiện an toàn về cơ sở vật chất trường, lớp học",
+    "entities": null,
+    "has_entities": false
+  },
+  {
+    "id": "ret_ent_003",
+    "domain": "honNhan_GiaDinh",
+    "query": "Luật 52/2010/QH12 quy định về Thứ tự ưu tiên lựa chọn gia đình thay thế như thế nào?",
+    "gold_sohieu": "52/2010/QH12",
+    "gold_article": "Điều 5. Thứ tự ưu tiên lựa chọn gia đình thay thế",
+    "entities": {
+      "LoaiVanBanFilter": "luật",
+      "NoibanHanhFilter": "quốc hội",
+      "NgayBanHanhFilter": "2010"
+    },
+    "has_entities": true
+  },
+  {
+    "id": "ret_noent_062",
+    "domain": "laoDong_TienLuong",
+    "query": "Tổ chức đánh giá điều kiện lao động có những quy định gì?",
+    "gold_sohieu": "29/2021/TT-BLĐTBXH",
+    "gold_article": "Điều 5. Tổ chức đánh giá điều kiện lao động",
+    "entities": null,
+    "has_entities": false
+  },
+  {
+    "id": "ret_noent_064",
+    "domain": "trachNhiem_HinhSu",
+    "query": "Tổng hợp hình phạt trong trường hợp phạm nhiều tội có những quy định gì?",
+    "gold_sohieu": "100/2015/QH13",
+    "gold_article": "Điều 103. Tổng hợp hình phạt trong trường hợp phạm nhiều tội",
+    "entities": null,
+    "has_entities": false
+  },
+  {
+    "id": "ret_ent_049",
+    "domain": "giaoThong_VanTai",
+    "query": "Luật 36/2024/QH15 quy định về Chuyển hướng xe như thế nào?",
+    "gold_sohieu": "36/2024/QH15",
+    "gold_article": "Điều 15. Chuyển hướng xe",
+    "entities": {
+      "LoaiVanBanFilter": "luật",
+      "NoibanHanhFilter": "quốc hội",
+      "NgayBanHanhFilter": "2024"
+    },
+    "has_entities": true
+  },
+  {
+    "id": "ret_noent_004",
+    "domain": "giaoThong_VanTai",
+    "query": "Các hành vi bị nghiêm cấm có những quy định gì?",
+    "gold_sohieu": "36/2024/QH15",
+    "gold_article": "Điều 9. Các hành vi bị nghiêm cấm",
+    "entities": null,
+    "has_entities": false
+  },
+  {
+    "id": "ret_noent_080",
+    "domain": "honNhan_GiaDinh",
+    "query": "Hành vi vi phạm quy định về đăng ký nhận cha, mẹ, con có những quy định gì?",
+    "gold_sohieu": "82/2020/NĐ-CP",
+    "gold_article": "Điều 43. Hành vi vi phạm quy định về đăng ký nhận cha, mẹ, con",
+    "entities": null,
+    "has_entities": false
+  },
+  {
+    "id": "ret_noent_065",
+    "domain": "honNhan_GiaDinh",
+    "query": "Quy định về chứng nhận việc nuôi con nuôi ra sao?",
+    "gold_sohieu": "52/2010/QH12",
+    "gold_article": "Điều 38. Chứng nhận việc nuôi con nuôi",
+    "entities": null,
+    "has_entities": false
+  },
+  {
+    "id": "ret_noent_092",
+    "domain": "giao_duc",
+    "query": "Phụ cấp thu hút có những quy định gì?",
+    "gold_sohieu": "61/2006/NĐ-CP",
+    "gold_article": "Điều 8. Phụ cấp thu hút",
+    "entities": null,
+    "has_entities": false
+  },
+  {
+    "id": "ret_noent_069",
+    "domain": "giaoThong_VanTai",
+    "query": "Quy định về trách nhiệm của Cục Cảnh sát giao thông ra sao?",
+    "gold_sohieu": "71/2024/TT-BCA",
+    "gold_article": "Điều 9. Trách nhiệm của Cục Cảnh sát giao thông",
+    "entities": null,
+    "has_entities": false
+  },
+  {
+    "id": "ret_ent_065",
+    "domain": "laoDong_TienLuong",
+    "query": "Luật 45/2019/QH14 quy định về Trình tự, thủ tục hòa giải tranh chấp lao động cá nhân của hòa giải viên lao động như thế nào?",
+    "gold_sohieu": "45/2019/QH14",
+    "gold_article": "Điều 188. Trình tự, thủ tục hòa giải tranh chấp lao động cá nhân của hòa giải viên lao động",
+    "entities": {
+      "LoaiVanBanFilter": "luật",
+      "NoibanHanhFilter": "quốc hội",
+      "NgayBanHanhFilter": "2019"
+    },
+    "has_entities": true
+  },
+  {
+    "id": "ret_noent_099",
+    "domain": "giaoThong_VanTai",
+    "query": "Quy định về kết thúc tuần tra, kiểm soát ra sao?",
+    "gold_sohieu": "73/2024/TT-BCA",
+    "gold_article": "Điều 21. Kết thúc tuần tra, kiểm soát",
+    "entities": null,
+    "has_entities": false
+  },
+  {
+    "id": "ret_noent_082",
+    "domain": "laoDong_TienLuong",
+    "query": "Bảo đảm an toàn, bảo mật và lưu trữ thông tin thị trường lao động có những quy định gì?",
+    "gold_sohieu": "38/2013/QH13",
+    "gold_article": "Điều 28. Bảo đảm an toàn, bảo mật và lưu trữ thông tin thị trường lao động",
+    "entities": null,
+    "has_entities": false
+  },
+  {
+    "id": "ret_ent_088",
+    "domain": "laoDong_TienLuong",
+    "query": "Luật 45/2019/QH14 có quy định gì về Đại diện thương lượng tập thể tại doanh nghiệp?",
+    "gold_sohieu": "45/2019/QH14",
+    "gold_article": "Điều 69. Đại diện thương lượng tập thể tại doanh nghiệp",
+    "entities": {
+      "LoaiVanBanFilter": "luật",
+      "NoibanHanhFilter": "quốc hội",
+      "NgayBanHanhFilter": "2019"
+    },
+    "has_entities": true
+  },
+  {
+    "id": "ret_ent_004",
+    "domain": "trachNhiem_HinhSu",
+    "query": "Luật 100/2015/QH13 có quy định gì về Giảm mức hình phạt đã tuyên?",
+    "gold_sohieu": "100/2015/QH13",
+    "gold_article": "Điều 63. Giảm mức hình phạt đã tuyên",
+    "entities": {
+      "LoaiVanBanFilter": "luật",
+      "NoibanHanhFilter": "quốc hội",
+      "NgayBanHanhFilter": "2015"
+    },
+    "has_entities": true
+  },
+  {
+    "id": "ret_noent_039",
+    "domain": "honNhan_GiaDinh",
+    "query": "Quy định về mục đích và yêu cầu của thông tin, tuyên truyền về phòng, chống bạo lực gia đình ra sao?",
+    "gold_sohieu": "02/2007/QH12",
+    "gold_article": "Điều 9. Mục đích và yêu cầu của thông tin, tuyên truyền về phòng, chống bạo lực gia đình",
+    "entities": null,
+    "has_entities": false
+  },
+  {
+    "id": "ret_noent_055",
+    "domain": "laoDong_TienLuong",
+    "query": "Quy định về mức trợ cấp tuất hằng tháng ra sao?",
+    "gold_sohieu": "58/2014/QH13",
+    "gold_article": "Điều 68. Mức trợ cấp tuất hằng tháng",
+    "entities": null,
+    "has_entities": false
+  },
+  {
+    "id": "ret_ent_054",
+    "domain": "giaoThong_VanTai",
+    "query": "Thông tư 41/2024/TT-BGTVT có quy định gì về Chấp thuận thiết kế nút giao đấu nối vào đường quốc lộ đang khai thác?",
+    "gold_sohieu": "41/2024/TT-BGTVT",
+    "gold_article": "Điều 3. Chấp thuận thiết kế nút giao đấu nối vào đường quốc lộ đang khai thác",
+    "entities": {
+      "LoaiVanBanFilter": "thông tư",
+      "NoibanHanhFilter": "bộ giao thông vận tải",
+      "NgayBanHanhFilter": "2024"
+    },
+    "has_entities": true
+  },
+  {
+    "id": "ret_noent_016",
+    "domain": "giaoThong_VanTai",
+    "query": "Quy định về quản lý sử dụng, cấp, cấp lại và thu hồi phù hiệu có những quy định gì?",
+    "gold_sohieu": "158/2024/NĐ-CP",
+    "gold_article": "Điều 23. Quy định về quản lý sử dụng, cấp, cấp lại và thu hồi phù hiệu",
+    "entities": null,
+    "has_entities": false
+  },
+  {
+    "id": "ret_ent_009",
+    "domain": "honNhan_GiaDinh",
+    "query": "Nghị định 08/2009/NĐ-CP quy định về Thủ tục đăng ký hoạt động của cơ sở hỗ trợ nạn nhân bạo lực gia đình, cơ sở tư vấn về phòng, chống bạo lực gia đình như thế nào?",
+    "gold_sohieu": "08/2009/NĐ-CP",
+    "gold_article": "Điều 16. Thủ tục đăng ký hoạt động của cơ sở hỗ trợ nạn nhân bạo lực gia đình, cơ sở tư vấn về phòng, chống bạo lực gia đình",
+    "entities": {
+      "LoaiVanBanFilter": "nghị định",
+      "NoibanHanhFilter": "chính phủ",
+      "NgayBanHanhFilter": "2009"
+    },
+    "has_entities": true
+  },
+  {
+    "id": "ret_noent_074",
+    "domain": "honNhan_GiaDinh",
+    "query": "Hợp pháp hóa lãnh sự giấy tờ, tài liệu về hôn nhân và gia đình có những quy định gì?",
+    "gold_sohieu": "52/2014/QH13",
+    "gold_article": "Điều 124. Hợp pháp hóa lãnh sự giấy tờ, tài liệu về hôn nhân và gia đình",
+    "entities": null,
+    "has_entities": false
+  },
+  {
+    "id": "ret_noent_003",
+    "domain": "laoDong_TienLuong",
+    "query": "Quy định về chính sách của Nhà nước về việc làm ra sao?",
+    "gold_sohieu": "38/2013/QH13",
+    "gold_article": "Điều 5. Chính sách của Nhà nước về việc làm",
+    "entities": null,
+    "has_entities": false
+  },
+  {
+    "id": "ret_ent_093",
+    "domain": "honNhan_GiaDinh",
+    "query": "Luật 52/2014/QH13 quy định về Đăng ký kết hôn như thế nào?",
+    "gold_sohieu": "52/2014/QH13",
+    "gold_article": "Điều 9. Đăng ký kết hôn",
+    "entities": {
+      "LoaiVanBanFilter": "luật",
+      "NoibanHanhFilter": "quốc hội",
+      "NgayBanHanhFilter": "2014"
+    },
+    "has_entities": true
+  },
+  {
+    "id": "ret_noent_070",
+    "domain": "giao_duc",
+    "query": "Xã hội hoá dạy nghề có những quy định gì?",
+    "gold_sohieu": "139/2006/NĐ-CP",
+    "gold_article": "Điều 3. Xã hội hoá dạy nghề",
+    "entities": null,
+    "has_entities": false
+  },
+  {
+    "id": "ret_noent_056",
+    "domain": "giaoThong_VanTai",
+    "query": "Dịch vụ cứu hộ giao thông đường bộ có những quy định gì?",
+    "gold_sohieu": "35/2024/QH15",
+    "gold_article": "Điều 79. Dịch vụ cứu hộ giao thông đường bộ",
+    "entities": null,
+    "has_entities": false
+  },
+  {
+    "id": "ret_ent_043",
+    "domain": "giao_duc",
+    "query": "Luật 43/2019/QH14 quy định về Các trình độ đào tạo giáo dục nghề nghiệp như thế nào?",
+    "gold_sohieu": "43/2019/QH14",
+    "gold_article": "Điều 35. Các trình độ đào tạo giáo dục nghề nghiệp",
+    "entities": {
+      "LoaiVanBanFilter": "luật",
+      "NoibanHanhFilter": "quốc hội",
+      "NgayBanHanhFilter": "2019"
+    },
+    "has_entities": true
+  },
+  {
+    "id": "ret_ent_016",
+    "domain": "honNhan_GiaDinh",
+    "query": "Thông tư 04/2020/TT-BTP có quy định gì về Cách ghi Giấy chứng nhận kết hôn, Sổ đăng ký kết hôn?",
+    "gold_sohieu": "04/2020/TT-BTP",
+    "gold_article": "Điều 32. Cách ghi Giấy chứng nhận kết hôn, Sổ đăng ký kết hôn",
+    "entities": {
+      "LoaiVanBanFilter": "thông tư",
+      "NoibanHanhFilter": "bộ tư pháp",
+      "NgayBanHanhFilter": "2020"
+    },
+    "has_entities": true
+  },
+  {
+    "id": "ret_noent_034",
+    "domain": "laoDong_TienLuong",
+    "query": "Trình tự đình công có những quy định gì?",
+    "gold_sohieu": "45/2019/QH14",
+    "gold_article": "Điều 200. Trình tự đình công",
+    "entities": null,
+    "has_entities": false
+  },
+  {
+    "id": "ret_noent_088",
+    "domain": "honNhan_GiaDinh",
+    "query": "Hành vi vi phạm trách nhiệm của người nộp đơn yêu cầu mở thủ tục phá sản có những quy định gì?",
+    "gold_sohieu": "82/2020/NĐ-CP",
+    "gold_article": "Điều 70. Hành vi vi phạm trách nhiệm của người nộp đơn yêu cầu mở thủ tục phá sản",
+    "entities": null,
+    "has_entities": false
+  },
+  {
+    "id": "ret_ent_050",
+    "domain": "giao_duc",
+    "query": "Nghị định 139/2006/NĐ-CP có quy định gì về Quy chế trung tâm dạy nghề, Điều lệ trường trung cấp nghề và Điều lệ trường cao đẳng nghề?",
+    "gold_sohieu": "139/2006/NĐ-CP",
+    "gold_article": "Điều 9. Quy chế trung tâm dạy nghề, Điều lệ trường trung cấp nghề và Điều lệ trường cao đẳng nghề",
+    "entities": {
+      "LoaiVanBanFilter": "nghị định",
+      "NoibanHanhFilter": "chính phủ",
+      "NgayBanHanhFilter": "2006"
+    },
+    "has_entities": true
+  },
+  {
+    "id": "ret_noent_079",
+    "domain": "giao_duc",
+    "query": "Quy định về thẩm định và ban hành chương trình đào tạo ra sao?",
+    "gold_sohieu": "17/2021/TT-BGDĐT",
+    "gold_article": "Điều 18. Thẩm định và ban hành chương trình đào tạo",
+    "entities": null,
+    "has_entities": false
+  },
+  {
+    "id": "ret_noent_009",
+    "domain": "giaoThong_VanTai",
+    "query": "Quy định về trách nhiệm của cơ sở đăng kiểm, chủ xe cơ giới, xe máy chuyên dùng và người điều khiển xe cơ giới, xe máy chuyên dùng ra sao?",
+    "gold_sohieu": "36/2024/QH15",
+    "gold_article": "Điều 43. Trách nhiệm của cơ sở đăng kiểm, chủ xe cơ giới, xe máy chuyên dùng và người điều khiển xe cơ giới, xe máy chuyên dùng",
+    "entities": null,
+    "has_entities": false
+  },
+  {
+    "id": "ret_noent_042",
+    "domain": "trachNhiem_HinhSu",
+    "query": "Chuyển tố giác, tin báo về tội phạm, kiến nghị khởi tố không thuộc thẩm quyền có những quy định gì?",
+    "gold_sohieu": "28/2020/TT-BCA",
+    "gold_article": "Điều 11. Chuyển tố giác, tin báo về tội phạm, kiến nghị khởi tố không thuộc thẩm quyền",
+    "entities": null,
+    "has_entities": false
+  },
+  {
+    "id": "ret_noent_043",
+    "domain": "laoDong_TienLuong",
+    "query": "Quy định về người lao động cao tuổi ra sao?",
+    "gold_sohieu": "45/2019/QH14",
+    "gold_article": "Điều 148. Người lao động cao tuổi",
+    "entities": null,
+    "has_entities": false
+  },
+  {
+    "id": "ret_noent_029",
+    "domain": "trachNhiem_HinhSu",
+    "query": "Quy định về trách nhiệm, quyền hạn của các bộ, cơ quan ngang bộ, cơ quan thuộc Chính phủ ra sao?",
+    "gold_sohieu": "59/2020/NĐ-CP",
+    "gold_article": "Điều 16. Trách nhiệm, quyền hạn của các bộ, cơ quan ngang bộ, cơ quan thuộc Chính phủ",
+    "entities": null,
+    "has_entities": false
+  },
+  {
+    "id": "ret_noent_021",
+    "domain": "trachNhiem_HinhSu",
+    "query": "Quy định về người bảo vệ quyền và lợi ích hợp pháp của bị hại, đương sự ra sao?",
+    "gold_sohieu": "101/2015/QH13",
+    "gold_article": "Điều 84. Người bảo vệ quyền và lợi ích hợp pháp của bị hại, đương sự",
+    "entities": null,
+    "has_entities": false
+  },
+  {
+    "id": "ret_noent_053",
+    "domain": "laoDong_TienLuong",
+    "query": "Quy định về thu hồi Giấy phép ra sao?",
+    "gold_sohieu": "112/2021/NĐ-CP",
+    "gold_article": "Điều 10. Thu hồi Giấy phép",
+    "entities": null,
+    "has_entities": false
+  },
+  {
+    "id": "ret_ent_064",
+    "domain": "giaoThong_VanTai",
+    "query": "Luật 36/2024/QH15 có quy định gì về Người đi bộ; trẻ em, phụ nữ mang thai, người già yếu, người khuyết tật, người mất năng lực hành vi dân sự tham gia giao thông đường bộ?",
+    "gold_sohieu": "36/2024/QH15",
+    "gold_article": "Điều 30. Người đi bộ; trẻ em, phụ nữ mang thai, người già yếu, người khuyết tật, người mất năng lực hành vi dân sự tham gia giao thông đường bộ",
+    "entities": {
+      "LoaiVanBanFilter": "luật",
+      "NoibanHanhFilter": "quốc hội",
+      "NgayBanHanhFilter": "2024"
+    },
+    "has_entities": true
+  },
+  {
+    "id": "ret_ent_061",
+    "domain": "trachNhiem_HinhSu",
+    "query": "Luật 100/2015/QH13 quy định về Tội vi phạm quy định về quản lý khu bảo tồn thiên nhiên như thế nào?",
+    "gold_sohieu": "100/2015/QH13",
+    "gold_article": "Điều 245. Tội vi phạm quy định về quản lý khu bảo tồn thiên nhiên",
+    "entities": {
+      "LoaiVanBanFilter": "luật",
+      "NoibanHanhFilter": "quốc hội",
+      "NgayBanHanhFilter": "2015"
+    },
+    "has_entities": true
+  },
+  {
+    "id": "ret_ent_091",
+    "domain": "laoDong_TienLuong",
+    "query": "Nghị định 12/2022/NĐ-CP quy định về Vi phạm quy định về người lao động cao tuổi, người khuyết tật như thế nào?",
+    "gold_sohieu": "12/2022/NĐ-CP",
+    "gold_article": "Điều 31. Vi phạm quy định về người lao động cao tuổi, người khuyết tật",
+    "entities": {
+      "LoaiVanBanFilter": "nghị định",
+      "NoibanHanhFilter": "chính phủ",
+      "NgayBanHanhFilter": "2022"
+    },
+    "has_entities": true
+  },
+  {
+    "id": "ret_noent_017",
+    "domain": "honNhan_GiaDinh",
+    "query": "Quy định về hành vi vi phạm quy định về yêu cầu bồi thường và giải quyết yêu cầu bồi thường ra sao?",
+    "gold_sohieu": "82/2020/NĐ-CP",
+    "gold_article": "Điều 56. Hành vi vi phạm quy định về yêu cầu bồi thường và giải quyết yêu cầu bồi thường",
+    "entities": null,
+    "has_entities": false
+  },
+  {
+    "id": "ret_noent_026",
+    "domain": "laoDong_TienLuong",
+    "query": "Thời gian thực tế làm việc ở vùng có điều kiện kinh tế - xã hội đặc biệt khó khăn để làm căn cứ tính hưởng các chế độ phụ cấp, trợ cấp có những quy định gì?",
+    "gold_sohieu": "76/2019/NĐ-CP",
+    "gold_article": "Điều 13. Thời gian thực tế làm việc ở vùng có điều kiện kinh tế - xã hội đặc biệt khó khăn để làm căn cứ tính hưởng các chế độ phụ cấp, trợ cấp",
+    "entities": null,
+    "has_entities": false
+  },
+  {
+    "id": "ret_ent_030",
+    "domain": "trachNhiem_HinhSu",
+    "query": "Nghị định 122/2013/NĐ-CP có quy định gì về Đề nghị đưa vào danh sách, đưa ra khỏi danh sách chỉ định của Hội đồng Bảo an Liên hợp quốc?",
+    "gold_sohieu": "122/2013/NĐ-CP",
+    "gold_article": "Điều 12. Đề nghị đưa vào danh sách, đưa ra khỏi danh sách chỉ định của Hội đồng Bảo an Liên hợp quốc",
+    "entities": {
+      "LoaiVanBanFilter": "nghị định",
+      "NoibanHanhFilter": "chính phủ",
+      "NgayBanHanhFilter": "2013"
+    },
+    "has_entities": true
+  },
+  {
+    "id": "ret_noent_027",
+    "domain": "giaoThong_VanTai",
+    "query": "Quy định về bộ Khoa học và Công nghệ ra sao?",
+    "gold_sohieu": "158/2024/NĐ-CP",
+    "gold_article": "Điều 67. Bộ Khoa học và Công nghệ",
+    "entities": null,
+    "has_entities": false
+  },
+  {
+    "id": "ret_ent_040",
+    "domain": "trachNhiem_HinhSu",
+    "query": "Luật 100/2015/QH13 có quy định gì về Tội vi phạm quy định về bảo vệ an toàn công trình thủy lợi, đê điều và phòng, chống thiên tai; vi phạm quy định về bảo vệ bờ, bãi sông?",
+    "gold_sohieu": "100/2015/QH13",
+    "gold_article": "Điều 238. Tội vi phạm quy định về bảo vệ an toàn công trình thủy lợi, đê điều và phòng, chống thiên tai; vi phạm quy định về bảo vệ bờ, bãi sông",
+    "entities": {
+      "LoaiVanBanFilter": "luật",
+      "NoibanHanhFilter": "quốc hội",
+      "NgayBanHanhFilter": "2015"
+    },
+    "has_entities": true
+  },
+  {
+    "id": "ret_noent_054",
+    "domain": "laoDong_TienLuong",
+    "query": "Giải quyết hưởng chế độ ốm đau, thai sản có những quy định gì?",
+    "gold_sohieu": "58/2014/QH13",
+    "gold_article": "Điều 102. Giải quyết hưởng chế độ ốm đau, thai sản",
+    "entities": null,
+    "has_entities": false
+  },
+  {
+    "id": "ret_ent_014",
+    "domain": "laoDong_TienLuong",
+    "query": "Luật 12/2012/QH13 có quy định gì về Tuyên truyền, vận động, giáo dục người lao động?",
+    "gold_sohieu": "12/2012/QH13",
+    "gold_article": "Điều 15. Tuyên truyền, vận động, giáo dục người lao động",
+    "entities": {
+      "LoaiVanBanFilter": "luật",
+      "NoibanHanhFilter": "quốc hội",
+      "NgayBanHanhFilter": "2012"
+    },
+    "has_entities": true
+  },
+  {
+    "id": "ret_ent_032",
+    "domain": "giao_duc",
+    "query": "Luật 43/2019/QH14 có quy định gì về Sáp nhập, chia, tách, giải thể nhà trường?",
+    "gold_sohieu": "43/2019/QH14",
+    "gold_article": "Điều 51. Sáp nhập, chia, tách, giải thể nhà trường",
+    "entities": {
+      "LoaiVanBanFilter": "luật",
+      "NoibanHanhFilter": "quốc hội",
+      "NgayBanHanhFilter": "2019"
+    },
+    "has_entities": true
+  },
+  {
+    "id": "ret_noent_068",
+    "domain": "honNhan_GiaDinh",
+    "query": "Hành vi vi phạm quy định về nghĩa vụ của tuyên truyền viên pháp luật, báo cáo viên pháp luật có những quy định gì?",
+    "gold_sohieu": "82/2020/NĐ-CP",
+    "gold_article": "Điều 49. Hành vi vi phạm quy định về nghĩa vụ của tuyên truyền viên pháp luật, báo cáo viên pháp luật",
+    "entities": null,
+    "has_entities": false
+  },
+  {
+    "id": "ret_noent_023",
+    "domain": "giao_duc",
+    "query": "Quy định về đối tượng được miễn học phí ra sao?",
+    "gold_sohieu": "81/2021/NĐ-CP",
+    "gold_article": "Điều 15. Đối tượng được miễn học phí",
+    "entities": null,
+    "has_entities": false
+  },
+  {
+    "id": "ret_noent_089",
+    "domain": "trachNhiem_HinhSu",
+    "query": "Quy định về kết luận điều tra trong trường hợp đình chỉ điều tra ra sao?",
+    "gold_sohieu": "101/2015/QH13",
+    "gold_article": "Điều 234. Kết luận điều tra trong trường hợp đình chỉ điều tra",
+    "entities": null,
+    "has_entities": false
+  },
+  {
+    "id": "ret_ent_099",
+    "domain": "laoDong_TienLuong",
+    "query": "Nghị định 20/2020/NĐ-CP quy định về Quản lý lao động như thế nào?",
+    "gold_sohieu": "20/2020/NĐ-CP",
+    "gold_article": "Điều 5. Quản lý lao động",
+    "entities": {
+      "LoaiVanBanFilter": "nghị định",
+      "NoibanHanhFilter": "chính phủ",
+      "NgayBanHanhFilter": "2020"
+    },
+    "has_entities": true
+  },
+  {
+    "id": "ret_noent_013",
+    "domain": "trachNhiem_HinhSu",
+    "query": "Quy định về tội vi phạm quy định về quản lý, sử dụng tài sản Nhà nước gây thất thoát, lãng phí ra sao?",
+    "gold_sohieu": "100/2015/QH13",
+    "gold_article": "Điều 219. Tội vi phạm quy định về quản lý, sử dụng tài sản Nhà nước gây thất thoát, lãng phí",
+    "entities": null,
+    "has_entities": false
+  },
+  {
+    "id": "ret_ent_022",
+    "domain": "giao_duc",
+    "query": "Nghị định 27/2015/NĐ-CP có quy định gì về Tiêu chuẩn danh hiệu “Nhà giáo Nhân dân”?",
+    "gold_sohieu": "27/2015/NĐ-CP",
+    "gold_article": "Điều 8. Tiêu chuẩn danh hiệu “Nhà giáo Nhân dân”",
+    "entities": {
+      "LoaiVanBanFilter": "nghị định",
+      "NoibanHanhFilter": "chính phủ",
+      "NgayBanHanhFilter": "2015"
+    },
+    "has_entities": true
+  },
+  {
+    "id": "ret_noent_100",
+    "domain": "laoDong_TienLuong",
+    "query": "Quản lý, sử dụng tài chính công đoàn có những quy định gì?",
+    "gold_sohieu": "12/2012/QH13",
+    "gold_article": "Điều 27. Quản lý, sử dụng tài chính công đoàn",
+    "entities": null,
+    "has_entities": false
+  },
+  {
+    "id": "ret_ent_047",
+    "domain": "giao_duc",
+    "query": "Luật 08/2012/QH13 quy định về Học phí và khoản thu dịch vụ khác như thế nào?",
+    "gold_sohieu": "08/2012/QH13",
+    "gold_article": "Điều 65. Học phí và khoản thu dịch vụ khác",
+    "entities": {
+      "LoaiVanBanFilter": "luật",
+      "NoibanHanhFilter": "quốc hội",
+      "NgayBanHanhFilter": "2012"
+    },
+    "has_entities": true
+  },
+  {
+    "id": "ret_noent_020",
+    "domain": "giao_duc",
+    "query": "Hội đồng cấp tỉnh, cấp Bộ có những quy định gì?",
+    "gold_sohieu": "27/2015/NĐ-CP",
+    "gold_article": "Điều 14. Hội đồng cấp tỉnh, cấp Bộ",
+    "entities": null,
+    "has_entities": false
+  },
+  {
+    "id": "ret_noent_032",
+    "domain": "giao_duc",
+    "query": "Đánh giá luận án tại đơn vị chuyên môn có những quy định gì?",
+    "gold_sohieu": "18/2021/TT-BGDĐT",
+    "gold_article": "Điều 14. Đánh giá luận án tại đơn vị chuyên môn",
+    "entities": null,
+    "has_entities": false
+  },
+  {
+    "id": "ret_ent_060",
+    "domain": "honNhan_GiaDinh",
+    "query": "Luật 60/2014/QH13 có quy định gì về Trách nhiệm đăng ký khai sinh?",
+    "gold_sohieu": "60/2014/QH13",
+    "gold_article": "Điều 15. Trách nhiệm đăng ký khai sinh",
+    "entities": {
+      "LoaiVanBanFilter": "luật",
+      "NoibanHanhFilter": "quốc hội",
+      "NgayBanHanhFilter": "2014"
+    },
+    "has_entities": true
+  },
+  {
+    "id": "ret_noent_083",
+    "domain": "honNhan_GiaDinh",
+    "query": "Quy định về hành vi cố ý không ngăn chặn, báo tin hành vi bạo lực gia đình và cản trở việc ngăn chặn, báo tin, xử lý hành vi bạo lực gia đình ra sao?",
+    "gold_sohieu": "167/2013/NĐ-CP",
+    "gold_article": "Điều 60. Hành vi cố ý không ngăn chặn, báo tin hành vi bạo lực gia đình và cản trở việc ngăn chặn, báo tin, xử lý hành vi bạo lực gia đình",
+    "entities": null,
+    "has_entities": false
+  },
+  {
+    "id": "ret_ent_052",
+    "domain": "laoDong_TienLuong",
+    "query": "Luật 45/2019/QH14 có quy định gì về Nghĩa vụ của lao động là người giúp việc gia đình?",
+    "gold_sohieu": "45/2019/QH14",
+    "gold_article": "Điều 164. Nghĩa vụ của lao động là người giúp việc gia đình",
+    "entities": {
+      "LoaiVanBanFilter": "luật",
+      "NoibanHanhFilter": "quốc hội",
+      "NgayBanHanhFilter": "2019"
+    },
+    "has_entities": true
+  },
+  {
+    "id": "ret_ent_069",
+    "domain": "giao_duc",
+    "query": "Nghị định 04/2021/NĐ-CP quy định về Vi phạm quy định về chỉ tiêu tuyển sinh như thế nào?",
+    "gold_sohieu": "04/2021/NĐ-CP",
+    "gold_article": "Điều 10. Vi phạm quy định về chỉ tiêu tuyển sinh",
+    "entities": {
+      "LoaiVanBanFilter": "nghị định",
+      "NoibanHanhFilter": "chính phủ",
+      "NgayBanHanhFilter": "2021"
+    },
+    "has_entities": true
+  },
+  {
+    "id": "ret_ent_027",
+    "domain": "laoDong_TienLuong",
+    "query": "Luật 38/2013/QH13 quy định về Trách nhiệm đào tạo, bồi dưỡng, nâng cao trình độ kỹ năng nghề như thế nào?",
+    "gold_sohieu": "38/2013/QH13",
+    "gold_article": "Điều 48. Trách nhiệm đào tạo, bồi dưỡng, nâng cao trình độ kỹ năng nghề",
+    "entities": {
+      "LoaiVanBanFilter": "luật",
+      "NoibanHanhFilter": "quốc hội",
+      "NgayBanHanhFilter": "2013"
+    },
+    "has_entities": true
+  },
+  {
+    "id": "ret_ent_089",
+    "domain": "giaoThong_VanTai",
+    "query": "Nghị định 160/2024/NĐ-CP quy định về Giấy phép xe tập lái và thẩm quyền cấp giấy phép xe tập lái như thế nào?",
+    "gold_sohieu": "160/2024/NĐ-CP",
+    "gold_article": "Điều 15. Giấy phép xe tập lái và thẩm quyền cấp giấy phép xe tập lái",
+    "entities": {
+      "LoaiVanBanFilter": "nghị định",
+      "NoibanHanhFilter": "chính phủ",
+      "NgayBanHanhFilter": "2024"
+    },
+    "has_entities": true
+  },
+  {
+    "id": "ret_ent_017",
+    "domain": "giaoThong_VanTai",
+    "query": "Thông tư 36/2024/TT-BGTVT quy định về Tiêu chí thiết lập tuyến như thế nào?",
+    "gold_sohieu": "36/2024/TT-BGTVT",
+    "gold_article": "Điều 5. Tiêu chí thiết lập tuyến",
+    "entities": {
+      "LoaiVanBanFilter": "thông tư",
+      "NoibanHanhFilter": "bộ giao thông vận tải",
+      "NgayBanHanhFilter": "2024"
+    },
+    "has_entities": true
+  },
+  {
+    "id": "ret_ent_002",
+    "domain": "trachNhiem_HinhSu",
+    "query": "Luật 30/2018/QH14 có quy định gì về Trình tự, thủ tục lập hồ sơ, danh sách người đủ điều kiện được đề nghị đặc xá?",
+    "gold_sohieu": "30/2018/QH14",
+    "gold_article": "Điều 15. Trình tự, thủ tục lập hồ sơ, danh sách người đủ điều kiện được đề nghị đặc xá",
+    "entities": {
+      "LoaiVanBanFilter": "luật",
+      "NoibanHanhFilter": "quốc hội",
+      "NgayBanHanhFilter": "2018"
+    },
+    "has_entities": true
+  },
+  {
+    "id": "ret_noent_058",
+    "domain": "honNhan_GiaDinh",
+    "query": "Chiếm hữu, sử dụng, định đoạt tài sản riêng có những quy định gì?",
+    "gold_sohieu": "52/2014/QH13",
+    "gold_article": "Điều 44. Chiếm hữu, sử dụng, định đoạt tài sản riêng",
+    "entities": null,
+    "has_entities": false
+  },
+  {
+    "id": "ret_ent_097",
+    "domain": "laoDong_TienLuong",
+    "query": "Thông tư 29/2021/TT-BYT quy định về Yêu cầu đối với nội dung, chương trình, tài liệu và thời gian đào tạo, hình thức đào tạo như thế nào?",
+    "gold_sohieu": "29/2021/TT-BYT",
+    "gold_article": "Điều 3. Yêu cầu đối với nội dung, chương trình, tài liệu và thời gian đào tạo, hình thức đào tạo",
+    "entities": {
+      "LoaiVanBanFilter": "thông tư",
+      "NoibanHanhFilter": "bộ y tế",
+      "NgayBanHanhFilter": "2021"
+    },
+    "has_entities": true
+  },
+  {
+    "id": "ret_ent_007",
+    "domain": "trachNhiem_HinhSu",
+    "query": "Luật 41/2019/QH14 quy định về Nhiệm vụ, quyền hạn của Ủy ban nhân dân cấp xã nơi người chấp hành án phạt quản chế về cư trú như thế nào?",
+    "gold_sohieu": "41/2019/QH14",
+    "gold_article": "Điều 113. Nhiệm vụ, quyền hạn của Ủy ban nhân dân cấp xã nơi người chấp hành án phạt quản chế về cư trú",
+    "entities": {
+      "LoaiVanBanFilter": "luật",
+      "NoibanHanhFilter": "quốc hội",
+      "NgayBanHanhFilter": "2019"
+    },
+    "has_entities": true
+  },
+  {
+    "id": "ret_ent_073",
+    "domain": "giao_duc",
+    "query": "Nghị định 127/2018/NĐ-CP quy định về Trách nhiệm quản lý nhà nước về giáo dục của Ủy ban nhân dân cấp tỉnh như thế nào?",
+    "gold_sohieu": "127/2018/NĐ-CP",
+    "gold_article": "Điều 6. Trách nhiệm quản lý nhà nước về giáo dục của Ủy ban nhân dân cấp tỉnh",
+    "entities": {
+      "LoaiVanBanFilter": "nghị định",
+      "NoibanHanhFilter": "chính phủ",
+      "NgayBanHanhFilter": "2018"
+    },
+    "has_entities": true
+  },
+  {
+    "id": "ret_ent_044",
+    "domain": "giaoThong_VanTai",
+    "query": "Thông tư 36/2024/TT-BGTVT có quy định gì về Quy định về trình tự, thủ tục đưa bến xe hàng vào khai thác?",
+    "gold_sohieu": "36/2024/TT-BGTVT",
+    "gold_article": "Điều 40. Quy định về trình tự, thủ tục đưa bến xe hàng vào khai thác",
+    "entities": {
+      "LoaiVanBanFilter": "thông tư",
+      "NoibanHanhFilter": "bộ giao thông vận tải",
+      "NgayBanHanhFilter": "2024"
+    },
+    "has_entities": true
+  },
+  {
+    "id": "ret_noent_019",
+    "domain": "giaoThong_VanTai",
+    "query": "Quy định về dịch vụ đại lý bán vé ra sao?",
+    "gold_sohieu": "35/2024/QH15",
+    "gold_article": "Điều 75. Dịch vụ đại lý bán vé",
+    "entities": null,
+    "has_entities": false
+  },
+  {
+    "id": "ret_noent_066",
+    "domain": "giaoThong_VanTai",
+    "query": "Công bố quyết định tình huống khẩn cấp và kết thúc tình huống khẩn cấp về thiên tai có những quy định gì?",
+    "gold_sohieu": "40/2024/TT-BGTVT",
+    "gold_article": "Điều 10. Công bố quyết định tình huống khẩn cấp và kết thúc tình huống khẩn cấp về thiên tai",
+    "entities": null,
+    "has_entities": false
+  },
+  {
+    "id": "ret_noent_071",
+    "domain": "trachNhiem_HinhSu",
+    "query": "Quy định về cơ sở của trách nhiệm hình sự ra sao?",
+    "gold_sohieu": "100/2015/QH13",
+    "gold_article": "Điều 2. Cơ sở của trách nhiệm hình sự",
+    "entities": null,
+    "has_entities": false
+  },
+  {
+    "id": "ret_ent_034",
+    "domain": "honNhan_GiaDinh",
+    "query": "Văn bản hợp nhất 02/VBHN-BYT có quy định gì về Gửi tinh trùng, gửi noãn, gửi phôi?",
+    "gold_sohieu": "02/VBHN-BYT",
+    "gold_article": "Điều 21. Gửi tinh trùng, gửi noãn, gửi phôi",
+    "entities": {
+      "LoaiVanBanFilter": "văn bản hợp nhất",
+      "NoibanHanhFilter": "bộ y tế",
+      "NgayBanHanhFilter": "2019"
+    },
+    "has_entities": true
+  },
+  {
+    "id": "ret_ent_075",
+    "domain": "laoDong_TienLuong",
+    "query": "Nghị định 24/2018/NĐ-CP quy định về Quyết định giải quyết khiếu nại lần hai như thế nào?",
+    "gold_sohieu": "24/2018/NĐ-CP",
+    "gold_article": "Điều 31. Quyết định giải quyết khiếu nại lần hai",
+    "entities": {
+      "LoaiVanBanFilter": "nghị định",
+      "NoibanHanhFilter": "chính phủ",
+      "NgayBanHanhFilter": "2018"
+    },
+    "has_entities": true
+  },
+  {
+    "id": "ret_ent_071",
+    "domain": "trachNhiem_HinhSu",
+    "query": "Luật 30/2018/QH14 quy định về Nguyên tắc thực hiện đặc xá như thế nào?",
+    "gold_sohieu": "30/2018/QH14",
+    "gold_article": "Điều 4. Nguyên tắc thực hiện đặc xá",
+    "entities": {
+      "LoaiVanBanFilter": "luật",
+      "NoibanHanhFilter": "quốc hội",
+      "NgayBanHanhFilter": "2018"
+    },
+    "has_entities": true
+  },
+  {
+    "id": "ret_noent_022",
+    "domain": "trachNhiem_HinhSu",
+    "query": "Phát hiện, ngăn chặn hành vi vi phạm thông qua hoạt động nghiệp vụ phòng, chống tội phạm có những quy định gì?",
+    "gold_sohieu": "66/2011/QH12",
+    "gold_article": "Điều 21. Phát hiện, ngăn chặn hành vi vi phạm thông qua hoạt động nghiệp vụ phòng, chống tội phạm",
+    "entities": null,
+    "has_entities": false
+  },
+  {
+    "id": "ret_noent_067",
+    "domain": "honNhan_GiaDinh",
+    "query": "Quy định về giấy tờ nộp và xuất trình khi đăng ký khai sinh ra sao?",
+    "gold_sohieu": "123/2015/NĐ-CP",
+    "gold_article": "Điều 9. Giấy tờ nộp và xuất trình khi đăng ký khai sinh",
+    "entities": null,
+    "has_entities": false
+  },
+  {
+    "id": "ret_noent_038",
+    "domain": "giao_duc",
+    "query": "Thời hạn của giấy phép hoạt động văn phòng đại diện có những quy định gì?",
+    "gold_sohieu": "15/2019/NĐ-CP",
+    "gold_article": "Điều 30. Thời hạn của giấy phép hoạt động văn phòng đại diện",
+    "entities": null,
+    "has_entities": false
+  },
+  {
+    "id": "ret_noent_044",
+    "domain": "trachNhiem_HinhSu",
+    "query": "Tước quyền ứng cử đại biểu cơ quan quyền lực nhà nước có những quy định gì?",
+    "gold_sohieu": "41/2019/QH14",
+    "gold_article": "Điều 126. Tước quyền ứng cử đại biểu cơ quan quyền lực nhà nước",
+    "entities": null,
+    "has_entities": false
+  },
+  {
+    "id": "ret_noent_031",
+    "domain": "giaoThong_VanTai",
+    "query": "Quy định về thu hồi giấy phép xe tập lái ra sao?",
+    "gold_sohieu": "160/2024/NĐ-CP",
+    "gold_article": "Điều 17. Thu hồi giấy phép xe tập lái",
+    "entities": null,
+    "has_entities": false
+  },
+  {
+    "id": "ret_noent_033",
+    "domain": "giao_duc",
+    "query": "Quy định về bồi hoàn kinh phí hỗ trợ ra sao?",
+    "gold_sohieu": "116/2020/NĐ-CP",
+    "gold_article": "Điều 6. Bồi hoàn kinh phí hỗ trợ",
+    "entities": null,
+    "has_entities": false
+  },
+  {
+    "id": "ret_ent_090",
+    "domain": "laoDong_TienLuong",
+    "query": "Luật 38/2013/QH13 có quy định gì về Doanh nghiệp hoạt động dịch vụ việc làm?",
+    "gold_sohieu": "38/2013/QH13",
+    "gold_article": "Điều 39. Doanh nghiệp hoạt động dịch vụ việc làm",
+    "entities": {
+      "LoaiVanBanFilter": "luật",
+      "NoibanHanhFilter": "quốc hội",
+      "NgayBanHanhFilter": "2013"
+    },
+    "has_entities": true
+  },
+  {
+    "id": "ret_noent_010",
+    "domain": "giaoThong_VanTai",
+    "query": "Chi phí quản lý, vận hành, khai thác, bảo trì và bảo vệ đường cao tốc có những quy định gì?",
+    "gold_sohieu": "35/2024/QH15",
+    "gold_article": "Điều 55. Chi phí quản lý, vận hành, khai thác, bảo trì và bảo vệ đường cao tốc",
+    "entities": null,
+    "has_entities": false
+  },
+  {
+    "id": "ret_noent_002",
+    "domain": "giao_duc",
+    "query": "Nội dung hoạt động khoa học và công nghệ có những quy định gì?",
+    "gold_sohieu": "08/2012/QH13",
+    "gold_article": "Điều 40. Nội dung hoạt động khoa học và công nghệ",
+    "entities": null,
+    "has_entities": false
+  },
+  {
+    "id": "ret_noent_007",
+    "domain": "laoDong_TienLuong",
+    "query": "Quy định về nhận lại người lao động hết thời hạn tạm hoãn thực hiện hợp đồng lao động ra sao?",
+    "gold_sohieu": "45/2019/QH14",
+    "gold_article": "Điều 31. Nhận lại người lao động hết thời hạn tạm hoãn thực hiện hợp đồng lao động",
+    "entities": null,
+    "has_entities": false
+  },
+  {
+    "id": "ret_noent_046",
+    "domain": "trachNhiem_HinhSu",
+    "query": "Tội gian lận bảo hiểm xã hội, bảo hiểm thất nghiệp có những quy định gì?",
+    "gold_sohieu": "100/2015/QH13",
+    "gold_article": "Điều 214. Tội gian lận bảo hiểm xã hội, bảo hiểm thất nghiệp",
+    "entities": null,
+    "has_entities": false
+  }
+]
