@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Trợ lý pháp luật Việt Nam — Bùi Huy</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ asset_url('style.css') }}">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="{{ asset_url('script.js') }}" defer></script>
+</head>
+<body>
+    <div class="app">
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-top">
+                <button class="icon-btn" id="toggle-sidebar" title="Thu gọn sidebar" aria-label="Toggle sidebar">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+                </button>
+                <div class="brand">
+                    <div class="brand-mark">⚖️</div>
+                    <div class="brand-text">
+                        <div class="brand-title">Pháp Luật VN</div>
+                        <div class="brand-sub">by Bùi Huy</div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="new-chat-btn" id="new-chat">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                <span>Cuộc trò chuyện mới</span>
+            </button>
+
+            <div class="session-section">
+                <div class="session-section-title">Lịch sử</div>
+                <div class="session-list" id="chat-sessions"></div>
+            </div>
+
+            <div class="sidebar-footer">
+                <div class="footer-row">
+                    <div class="footer-status">
+                        <span class="status-dot"></span>
+                        <span>Bedrock Claude Sonnet 4.5</span>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <main class="main">
+            <header class="top-bar">
+                <div class="top-bar-title">
+                    <span class="top-bar-emoji">💬</span>
+                    <span>Trợ lý pháp luật Việt Nam</span>
+                </div>
+                <div class="top-bar-right">
+                    <button class="icon-btn" id="clear-current" title="Xóa cuộc trò chuyện hiện tại">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 6 5 6 21 6"/><path d="M19 6l-2 14a2 2 0 0 1-2 2H9a2 2 0 0 1-2-2L5 6"/><path d="M10 11v6"/><path d="M14 11v6"/><path d="M9 6V4a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2"/></svg>
+                    </button>
+                </div>
+            </header>
+
+            <section class="chat-area" id="chat-output">
+                <div class="welcome-screen" id="welcome-screen">
+                    <div class="welcome-badge">
+                        <div class="welcome-avatar">⚖️</div>
+                    </div>
+                    <h1 class="welcome-title">Xin chào! Tôi là trợ lý pháp luật Việt Nam</h1>
+                    <p class="welcome-text">
+                        Tôi là trợ lý ảo chuyên về lĩnh vực pháp luật Việt Nam, được phát triển bởi <strong>Bùi Huy</strong>, dựa trên mô hình AI tiên tiến nhất hiện nay. Tôi được thiết kế để cung cấp tư vấn pháp lý nhanh chóng, chính xác và dễ hiểu, với khả năng trích dẫn điều luật cụ thể từ các văn bản pháp luật đang có hiệu lực.
+                    </p>
+                    <p class="welcome-text">
+                        Mỗi câu trả lời của tôi đều được cập nhật từ nguồn chính thức của <strong>Quốc hội</strong> và <strong>Bộ Tư pháp</strong>, nhằm mang đến trải nghiệm tư vấn minh bạch và đáng tin cậy nhất cho người dùng Việt Nam.
+                    </p>
+                    <p class="welcome-text welcome-greeting">Rất vui được đồng hành và hỗ trợ Bạn!</p>
+
+                    <div class="suggestion-grid">
+                        <button class="suggestion-card" data-prompt="Điều kiện kết hôn theo pháp luật Việt Nam là gì?">
+                            <div class="suggestion-icon">💍</div>
+                            <div class="suggestion-label">Điều kiện kết hôn theo pháp luật Việt Nam?</div>
+                        </button>
+                        <button class="suggestion-card" data-prompt="Luật giao thông đường bộ quy định mức phạt vi phạm nồng độ cồn như thế nào?">
+                            <div class="suggestion-icon">🚗</div>
+                            <div class="suggestion-label">Mức phạt vi phạm nồng độ cồn?</div>
+                        </button>
+                        <button class="suggestion-card" data-prompt="Quyền và nghĩa vụ của người lao động theo Bộ luật Lao động 2019?">
+                            <div class="suggestion-icon">💼</div>
+                            <div class="suggestion-label">Quyền và nghĩa vụ của người lao động?</div>
+                        </button>
+                        <button class="suggestion-card" data-prompt="Thủ tục đăng ký khai sinh cho con mới sinh?">
+                            <div class="suggestion-icon">📝</div>
+                            <div class="suggestion-label">Thủ tục đăng ký khai sinh?</div>
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <div class="references-panel" id="relevant-documents-container"></div>
+
+            <footer class="composer">
+                <div class="composer-inner">
+                    <div class="composer-toolbar">
+                        <button class="mode-toggle" id="toggle-search-web" title="Bật/tắt tìm kiếm web">
+                            <span class="mode-toggle-icon">🌐</span>
+                            <span class="mode-toggle-label">Web Search</span>
+                            <span class="mode-toggle-switch"></span>
+                        </button>
+                        <div class="mode-hint" id="mode-hint">Chế độ: <strong>Chỉ RAG nội bộ</strong> (câu ngoài CSDL sẽ báo không biết)</div>
+                    </div>
+                    <div class="composer-input-row">
+                        <textarea id="user-query" placeholder="Nhập câu hỏi pháp luật của bạn..." rows="1"></textarea>
+                        <button id="send-button" type="button" disabled aria-label="Gửi">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                        </button>
+                    </div>
+                    <div class="composer-note">Nội dung do AI tạo có thể không hoàn toàn chính xác. Vui lòng xác minh với văn bản luật gốc.</div>
+                </div>
+            </footer>
+        </main>
+    </div>
+
+    <div class="toast-container" id="toast-container"></div>
+</body>
+</html>

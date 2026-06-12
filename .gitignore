@@ -1,0 +1,11 @@
+# Secrets / env
+.env
+
+# Python cache
+__pycache__/
+
+# Virtual environment
+.venv/
+
+# OS
+.DS_Store

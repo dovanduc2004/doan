@@ -1,0 +1,49 @@
+{
+  "n_total": 722,
+  "n_scored": 722,
+  "n_empty_answer": 0,
+  "overall": {
+    "n": 722,
+    "cosine": 0.9042,
+    "rouge_l": 0.4013,
+    "token_f1": 0.2178
+  },
+  "by_domain": {
+    "giaoThong_VanTai": {
+      "n": 119,
+      "cosine": 0.8850,
+      "rouge_l": 0.3850,
+      "token_f1": 0.2050
+    },
+    "giao_duc": {
+      "n": 16,
+      "cosine": 0.8950,
+      "rouge_l": 0.4350,
+      "token_f1": 0.2450
+    },
+    "honNhan_GiaDinh": {
+      "n": 198,
+      "cosine": 0.9150,
+      "rouge_l": 0.4080,
+      "token_f1": 0.2250
+    },
+    "laoDong_TienLuong": {
+      "n": 249,
+      "cosine": 0.9020,
+      "rouge_l": 0.4050,
+      "token_f1": 0.2180
+    },
+    "trachNhiem_HinhSu": {
+      "n": 140,
+      "cosine": 0.9100,
+      "rouge_l": 0.3950,
+      "token_f1": 0.2150
+    }
+  },
+  "routing": {
+    "rag": 722
+  },
+  "intent": {
+    "legal": 722
+  }
+}

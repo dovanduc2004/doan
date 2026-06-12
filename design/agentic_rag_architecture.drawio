@@ -1,0 +1,141 @@
+<mxfile host="app.diagrams.net" modified="2026-06-12T00:00:00.000Z" agent="Kiro" version="24.0.0">
+  <diagram id="agentic-rag-workflow" name="Agentic RAG Workflow">
+    <mxGraphModel dx="1400" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1300" pageHeight="1950" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <!-- ===== TOP FLOW ===== -->
+        <mxCell id="user" value="User (Web UI)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=13;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="410" y="40" width="240" height="50" as="geometry" />
+        </mxCell>
+
+        <mxCell id="api" value="API: POST /api/chat/chatbot-agentic&#10;(query, session_id, use_web_fallback)&#10;→ Returns SSE stream (event stream)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12" vertex="1" parent="1">
+          <mxGeometry x="380" y="130" width="300" height="70" as="geometry" />
+        </mxCell>
+
+        <mxCell id="memctx" value="Memory.build_context(session_id)&#10;Assemble context:&#10;[long-term facts] + [session summary] + [last 5 turns]" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=12" vertex="1" parent="1">
+          <mxGeometry x="380" y="240" width="300" height="70" as="geometry" />
+        </mxCell>
+
+        <mxCell id="planner" value="Planner Agent — single LLM call (Claude Sonnet 4.5)&#10;→ intent (legal/chitchat/realtime/out_of_scope)&#10;→ tool, rewritten_query, entities (metadata filter)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=12;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="360" y="350" width="340" height="80" as="geometry" />
+        </mxCell>
+
+        <mxCell id="tool" value="Route&#10;by tool" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=12;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="470" y="470" width="120" height="90" as="geometry" />
+        </mxCell>
+
+        <!-- ===== DATASTORES ===== -->
+        <mxCell id="ds_sqlite" value="SQLite&#10;chat_history.db" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=14;fillColor=#f8cecc;strokeColor=#b85450;fontSize=11" vertex="1" parent="1">
+          <mxGeometry x="60" y="245" width="120" height="80" as="geometry" />
+        </mxCell>
+
+        <mxCell id="ds_qdrant" value="Qdrant&#10;(Domain_Law)" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=14;fillColor=#f8cecc;strokeColor=#b85450;fontSize=11" vertex="1" parent="1">
+          <mxGeometry x="40" y="650" width="120" height="80" as="geometry" />
+        </mxCell>
+
+        <!-- ===== RAG COLUMN (left/center) ===== -->
+        <mxCell id="r_retrieve" value="① Retrieve &amp; Rerank&#10;• Generate 3 query variants (multi-query)&#10;• Vietnamese tokenize (PyVi ViTokenizer)&#10;• Qdrant search + metadata filter&#10;• RRF fusion → up to 50 documents&#10;• Cross-Encoder rerank → top 5" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;align=left;spacingLeft=8" vertex="1" parent="1">
+          <mxGeometry x="180" y="620" width="320" height="130" as="geometry" />
+        </mxCell>
+
+        <mxCell id="r_extract" value="② BERT Extract&#10;→ extract relevant snippet from each document" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12" vertex="1" parent="1">
+          <mxGeometry x="180" y="790" width="320" height="55" as="geometry" />
+        </mxCell>
+
+        <mxCell id="r_grade" value="③ Grader Agent (CRAG)&#10;→ relevance_score (0–1), decision" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=12;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="180" y="885" width="320" height="60" as="geometry" />
+        </mxCell>
+
+        <mxCell id="r_gradecheck" value="score ≥ 0.6&#10;or sufficient?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=12" vertex="1" parent="1">
+          <mxGeometry x="250" y="985" width="180" height="90" as="geometry" />
+        </mxCell>
+
+        <mxCell id="r_webfallback" value="best &lt; 0.4&#10;&amp; Web on?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=12" vertex="1" parent="1">
+          <mxGeometry x="250" y="1115" width="180" height="90" as="geometry" />
+        </mxCell>
+
+        <mxCell id="r_generate" value="④ Generator (Claude Sonnet 4.5)&#10;Input: full article text + BERT highlight&#10;→ answer + references (cited documents)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=12;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="180" y="1245" width="320" height="90" as="geometry" />
+        </mxCell>
+
+        <mxCell id="r_hallu" value="⑤ Hallucination Checker&#10;→ is_grounded, confidence, unsupported_claims" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=12;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="180" y="1375" width="320" height="60" as="geometry" />
+        </mxCell>
+
+        <mxCell id="r_hallucheck" value="Grounded?&#10;(conf ≥ 0.75 &amp; ≥ 2 bad claims → regenerate)" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=11" vertex="1" parent="1">
+          <mxGeometry x="220" y="1475" width="240" height="100" as="geometry" />
+        </mxCell>
+
+        <!-- ===== OTHER TOOLS (right column) ===== -->
+        <mxCell id="t_template" value="tool = template (chitchat)&#10;Search information.json (cosine)&#10;→ generate_information" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12" vertex="1" parent="1">
+          <mxGeometry x="780" y="620" width="320" height="75" as="geometry" />
+        </mxCell>
+
+        <mxCell id="t_ask" value="tool = ask_user&#10;→ ask a clarifying question (clarifying_question)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12" vertex="1" parent="1">
+          <mxGeometry x="780" y="725" width="320" height="55" as="geometry" />
+        </mxCell>
+
+        <mxCell id="t_reject" value="tool = reject&#10;→ polite refusal (invalid_query), suggest enabling Web" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12" vertex="1" parent="1">
+          <mxGeometry x="780" y="810" width="320" height="55" as="geometry" />
+        </mxCell>
+
+        <mxCell id="t_web" value="tool = web (Tavily)&#10;• Tavily search → links + page content&#10;• Synthesize answer (LLM)&#10;• Hallucination Checker verification" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;align=left;spacingLeft=8" vertex="1" parent="1">
+          <mxGeometry x="780" y="895" width="320" height="100" as="geometry" />
+        </mxCell>
+
+        <!-- ===== FINAL + PERSIST ===== -->
+        <mxCell id="final" value="SSE 'final' event&#10;→ answer + list of references&#10;(rendered on the UI)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="380" y="1650" width="320" height="75" as="geometry" />
+        </mxCell>
+
+        <mxCell id="persist" value="Background task (after streaming completes)&#10;• Save session / messages / references to SQLite&#10;• Update rolling summary&#10;• Extract &amp; save user facts (long-term memory)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=12;align=left;spacingLeft=8" vertex="1" parent="1">
+          <mxGeometry x="360" y="1770" width="360" height="100" as="geometry" />
+        </mxCell>
+
+        <!-- ===== EDGES (top flow) ===== -->
+        <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;" edge="1" parent="1" source="user" target="api"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;" edge="1" parent="1" source="api" target="memctx"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;" edge="1" parent="1" source="memctx" target="planner"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;" edge="1" parent="1" source="planner" target="tool"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e_sqlite_mem" value="read memory" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=open;dashed=1;startArrow=open;" edge="1" parent="1" source="ds_sqlite" target="memctx"><mxGeometry relative="1" as="geometry" /></mxCell>
+
+        <!-- ===== EDGES (tool routing) ===== -->
+        <mxCell id="e_rag" value="rag (legal)" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;fontStyle=1;fontColor=#b85450;" edge="1" parent="1" source="tool" target="r_retrieve"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e_tmpl" value="template" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;" edge="1" parent="1" source="tool" target="t_template"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e_ask" value="ask_user" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;" edge="1" parent="1" source="tool" target="t_ask"><mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="940" y="510" /></Array></mxGeometry></mxCell>
+        <mxCell id="e_reject" value="reject" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;" edge="1" parent="1" source="tool" target="t_reject"><mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="1180" y="510" /><mxPoint x="1180" y="837" /></Array></mxGeometry></mxCell>
+        <mxCell id="e_web" value="web" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;" edge="1" parent="1" source="tool" target="t_web"><mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="1210" y="510" /><mxPoint x="1210" y="945" /></Array></mxGeometry></mxCell>
+
+        <!-- ===== EDGES (RAG pipeline) ===== -->
+        <mxCell id="e_q1" value="semantic search" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=open;dashed=1;startArrow=open;" edge="1" parent="1" source="ds_qdrant" target="r_retrieve"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e_r1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;" edge="1" parent="1" source="r_retrieve" target="r_extract"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e_r2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;" edge="1" parent="1" source="r_extract" target="r_grade"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e_r3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;" edge="1" parent="1" source="r_grade" target="r_gradecheck"><mxGeometry relative="1" as="geometry" /></mxCell>
+
+        <mxCell id="e_retry" value="Not enough → rewrite query &amp; retry (≤ 2 iterations, keep best)" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;fontColor=#d79b00;fontStyle=2;" edge="1" parent="1" source="r_gradecheck" target="r_retrieve"><mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="600" y="1030" /><mxPoint x="600" y="685" /></Array></mxGeometry></mxCell>
+
+        <mxCell id="e_r4" value="Enough / max iters" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;" edge="1" parent="1" source="r_gradecheck" target="r_webfallback"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e_wf_yes" value="Yes → switch to Web" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;fontColor=#b85450;" edge="1" parent="1" source="r_webfallback" target="t_web"><mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="650" y="1160" /><mxPoint x="650" y="945" /></Array></mxGeometry></mxCell>
+        <mxCell id="e_wf_no" value="No" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;" edge="1" parent="1" source="r_webfallback" target="r_generate"><mxGeometry relative="1" as="geometry" /></mxCell>
+
+        <mxCell id="e_r5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;" edge="1" parent="1" source="r_generate" target="r_hallu"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e_r6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;" edge="1" parent="1" source="r_hallu" target="r_hallucheck"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e_regen" value="Not grounded → regenerate with missing-claim feedback" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;fontColor=#d79b00;fontStyle=2;" edge="1" parent="1" source="r_hallucheck" target="r_generate"><mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="120" y="1525" /><mxPoint x="120" y="1290" /></Array></mxGeometry></mxCell>
+        <mxCell id="e_hok" value="OK" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;fontStyle=1;" edge="1" parent="1" source="r_hallucheck" target="final"><mxGeometry relative="1" as="geometry" /></mxCell>
+
+        <!-- ===== EDGES (other tools → final) ===== -->
+        <mxCell id="e_tf1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;" edge="1" parent="1" source="t_template" target="final"><mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="940" y="1610" /><mxPoint x="540" y="1610" /></Array></mxGeometry></mxCell>
+        <mxCell id="e_tf2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;" edge="1" parent="1" source="t_ask" target="final"><mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="1130" y="752" /><mxPoint x="1130" y="1620" /><mxPoint x="540" y="1620" /></Array></mxGeometry></mxCell>
+        <mxCell id="e_tf3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;" edge="1" parent="1" source="t_reject" target="final"><mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="1150" y="837" /><mxPoint x="1150" y="1600" /><mxPoint x="540" y="1600" /></Array></mxGeometry></mxCell>
+        <mxCell id="e_tf4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;" edge="1" parent="1" source="t_web" target="final"><mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="940" y="1630" /><mxPoint x="700" y="1630" /></Array></mxGeometry></mxCell>
+
+        <!-- ===== EDGES (final → persist → sqlite) ===== -->
+        <mxCell id="e_fp" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;" edge="1" parent="1" source="final" target="persist"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="e_ps" value="write" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;dashed=1;" edge="1" parent="1" source="persist" target="ds_sqlite"><mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="120" y="1820" /></Array></mxGeometry></mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
