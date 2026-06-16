@@ -178,13 +178,15 @@ The Orchestrator (`source/agent/orchestrator.py`) runs a reflective loop and emi
 
 | Module         | Technique               | Score              |
 | -------------- | ----------------------- | ------------------ |
-| BERT Extractor | Full & LoRA Fine-Tuning | F1 0.93, EM 0.91   |
+| BERT Extractor | Full & LoRA Fine-Tuning | F1 0.89, EM 0.81   |
 | Embedding      | SBERT + Matryoshka      | NDCG@10 0.92       |
-| Reranker       | Cross-Encoder + RRF     | MRR@10 0.87        |
+| Reranker       | Cross-Encoder + RRF     | F1 0.9985          |
 
-**Planner Agent** (1,000 samples): intent Macro-F1 **0.9837**, tool routing accuracy **0.986**, entity F1 0.9577, query rewriting cosine 0.8920, JSON parse 99.8%.
+**Planner Agent** (1,000 samples): intent Macro-F1 **0.9427**, tool routing accuracy **0.958**, entity F1 0.9231, query rewriting cosine 0.8650, JSON parse 99.2%.
 
-**End-to-end system** (722 legal questions): average cosine **0.9042**, ROUGE-L **0.4013**, Token-F1 **0.2178**.
+**Integrated retriever** (200 questions, LLM-as-judge): Hit@5 **0.815**, MRR@5 0.566, NDCG@5 0.642, Recall@50 0.865.
+
+**End-to-end system** (722 legal questions): average cosine **0.8603**, ROUGE-L **0.3600**, Token-F1 **0.1911**.
 
 Evaluation scripts: `source_research/Eval_System/` (end-to-end) and `source_research/Agentic_RAG/eval/` (Planner).
 

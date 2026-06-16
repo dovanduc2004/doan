@@ -1,141 +1,300 @@
-<mxfile host="app.diagrams.net" modified="2026-06-12T00:00:00.000Z" agent="Kiro" version="24.0.0">
-  <diagram id="agentic-rag-workflow" name="Agentic RAG Workflow">
-    <mxGraphModel dx="1400" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1300" pageHeight="1950" math="0" shadow="0">
+<mxfile host="app.diagrams.net" modified="2026-06-15T00:00:00.000Z" agent="Kiro" version="24.0.0">
+
+  <!-- ============================================================= -->
+  <!-- PAGE 1 — SYSTEM OVERVIEW                                       -->
+  <!-- ============================================================= -->
+  <diagram id="overview" name="1-System-Overview">
+    <mxGraphModel dx="1000" dy="700" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="900" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
 
-        <!-- ===== TOP FLOW ===== -->
-        <mxCell id="user" value="User (Web UI)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=13;fontStyle=1" vertex="1" parent="1">
-          <mxGeometry x="410" y="40" width="240" height="50" as="geometry" />
+        <mxCell id="o_title" value="Agentic RAG — System Overview" style="text;html=1;align=center;fontSize=18;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="380" y="10" width="440" height="30" as="geometry" />
         </mxCell>
 
-        <mxCell id="api" value="API: POST /api/chat/chatbot-agentic&#10;(query, session_id, use_web_fallback)&#10;→ Returns SSE stream (event stream)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12" vertex="1" parent="1">
-          <mxGeometry x="380" y="130" width="300" height="70" as="geometry" />
+        <mxCell id="o_user" value="User (Web UI)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=15;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="460" y="60" width="280" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="o_api" value="API: POST /api/chat/chatbot-agentic&#10;(returns an SSE event stream)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=14" vertex="1" parent="1">
+          <mxGeometry x="440" y="150" width="320" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="o_mem" value="Build conversational context&#10;(long-term facts + summary + recent turns)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=14" vertex="1" parent="1">
+          <mxGeometry x="440" y="250" width="320" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="o_plan" value="Planner Agent (single LLM call)&#10;intent · tool · rewritten query · entities" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=14;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="440" y="350" width="320" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="o_route" value="Route by tool" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=14;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="530" y="450" width="140" height="80" as="geometry" />
         </mxCell>
 
-        <mxCell id="memctx" value="Memory.build_context(session_id)&#10;Assemble context:&#10;[long-term facts] + [session summary] + [last 5 turns]" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=12" vertex="1" parent="1">
-          <mxGeometry x="380" y="240" width="300" height="70" as="geometry" />
+        <mxCell id="o_b_rag" value="Legal RAG pipeline&#10;(see Fig. 3)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=13;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="40" y="600" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="o_b_tmpl" value="Template&#10;(chit-chat)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=13" vertex="1" parent="1">
+          <mxGeometry x="270" y="600" width="190" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="o_b_ask" value="Ask user&#10;(clarify)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=13" vertex="1" parent="1">
+          <mxGeometry x="490" y="600" width="190" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="o_b_reject" value="Reject&#10;(out of scope)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=13" vertex="1" parent="1">
+          <mxGeometry x="710" y="600" width="190" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="o_b_web" value="Web search&#10;(Tavily)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=13" vertex="1" parent="1">
+          <mxGeometry x="930" y="600" width="190" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="o_tools_note" value="Auxiliary tool branches — see Fig. 4" style="text;html=1;align=center;fontSize=12;fontStyle=2;fontColor=#6c8ebf" vertex="1" parent="1">
+          <mxGeometry x="270" y="665" width="850" height="20" as="geometry" />
         </mxCell>
 
-        <mxCell id="planner" value="Planner Agent — single LLM call (Claude Sonnet 4.5)&#10;→ intent (legal/chitchat/realtime/out_of_scope)&#10;→ tool, rewritten_query, entities (metadata filter)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=12;fontStyle=1" vertex="1" parent="1">
-          <mxGeometry x="360" y="350" width="340" height="80" as="geometry" />
+        <mxCell id="o_final" value="SSE 'final' event → answer + references" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=14;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="440" y="730" width="320" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="o_persist" value="Background: persist conversation &amp; update memory (see Fig. 5)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=13" vertex="1" parent="1">
+          <mxGeometry x="420" y="810" width="360" height="50" as="geometry" />
         </mxCell>
 
-        <mxCell id="tool" value="Route&#10;by tool" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=12;fontStyle=1" vertex="1" parent="1">
-          <mxGeometry x="470" y="470" width="120" height="90" as="geometry" />
-        </mxCell>
-
-        <!-- ===== DATASTORES ===== -->
-        <mxCell id="ds_sqlite" value="SQLite&#10;chat_history.db" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=14;fillColor=#f8cecc;strokeColor=#b85450;fontSize=11" vertex="1" parent="1">
-          <mxGeometry x="60" y="245" width="120" height="80" as="geometry" />
-        </mxCell>
-
-        <mxCell id="ds_qdrant" value="Qdrant&#10;(Domain_Law)" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=14;fillColor=#f8cecc;strokeColor=#b85450;fontSize=11" vertex="1" parent="1">
-          <mxGeometry x="40" y="650" width="120" height="80" as="geometry" />
-        </mxCell>
-
-        <!-- ===== RAG COLUMN (left/center) ===== -->
-        <mxCell id="r_retrieve" value="① Retrieve &amp; Rerank&#10;• Generate 3 query variants (multi-query)&#10;• Vietnamese tokenize (PyVi ViTokenizer)&#10;• Qdrant search + metadata filter&#10;• RRF fusion → up to 50 documents&#10;• Cross-Encoder rerank → top 5" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;align=left;spacingLeft=8" vertex="1" parent="1">
-          <mxGeometry x="180" y="620" width="320" height="130" as="geometry" />
-        </mxCell>
-
-        <mxCell id="r_extract" value="② BERT Extract&#10;→ extract relevant snippet from each document" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12" vertex="1" parent="1">
-          <mxGeometry x="180" y="790" width="320" height="55" as="geometry" />
-        </mxCell>
-
-        <mxCell id="r_grade" value="③ Grader Agent (CRAG)&#10;→ relevance_score (0–1), decision" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=12;fontStyle=1" vertex="1" parent="1">
-          <mxGeometry x="180" y="885" width="320" height="60" as="geometry" />
-        </mxCell>
-
-        <mxCell id="r_gradecheck" value="score ≥ 0.6&#10;or sufficient?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=12" vertex="1" parent="1">
-          <mxGeometry x="250" y="985" width="180" height="90" as="geometry" />
-        </mxCell>
-
-        <mxCell id="r_webfallback" value="best &lt; 0.4&#10;&amp; Web on?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=12" vertex="1" parent="1">
-          <mxGeometry x="250" y="1115" width="180" height="90" as="geometry" />
-        </mxCell>
-
-        <mxCell id="r_generate" value="④ Generator (Claude Sonnet 4.5)&#10;Input: full article text + BERT highlight&#10;→ answer + references (cited documents)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=12;fontStyle=1" vertex="1" parent="1">
-          <mxGeometry x="180" y="1245" width="320" height="90" as="geometry" />
-        </mxCell>
-
-        <mxCell id="r_hallu" value="⑤ Hallucination Checker&#10;→ is_grounded, confidence, unsupported_claims" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=12;fontStyle=1" vertex="1" parent="1">
-          <mxGeometry x="180" y="1375" width="320" height="60" as="geometry" />
-        </mxCell>
-
-        <mxCell id="r_hallucheck" value="Grounded?&#10;(conf ≥ 0.75 &amp; ≥ 2 bad claims → regenerate)" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=11" vertex="1" parent="1">
-          <mxGeometry x="220" y="1475" width="240" height="100" as="geometry" />
-        </mxCell>
-
-        <!-- ===== OTHER TOOLS (right column) ===== -->
-        <mxCell id="t_template" value="tool = template (chitchat)&#10;Search information.json (cosine)&#10;→ generate_information" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12" vertex="1" parent="1">
-          <mxGeometry x="780" y="620" width="320" height="75" as="geometry" />
-        </mxCell>
-
-        <mxCell id="t_ask" value="tool = ask_user&#10;→ ask a clarifying question (clarifying_question)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12" vertex="1" parent="1">
-          <mxGeometry x="780" y="725" width="320" height="55" as="geometry" />
-        </mxCell>
-
-        <mxCell id="t_reject" value="tool = reject&#10;→ polite refusal (invalid_query), suggest enabling Web" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12" vertex="1" parent="1">
-          <mxGeometry x="780" y="810" width="320" height="55" as="geometry" />
-        </mxCell>
-
-        <mxCell id="t_web" value="tool = web (Tavily)&#10;• Tavily search → links + page content&#10;• Synthesize answer (LLM)&#10;• Hallucination Checker verification" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;align=left;spacingLeft=8" vertex="1" parent="1">
-          <mxGeometry x="780" y="895" width="320" height="100" as="geometry" />
-        </mxCell>
-
-        <!-- ===== FINAL + PERSIST ===== -->
-        <mxCell id="final" value="SSE 'final' event&#10;→ answer + list of references&#10;(rendered on the UI)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;fontStyle=1" vertex="1" parent="1">
-          <mxGeometry x="380" y="1650" width="320" height="75" as="geometry" />
-        </mxCell>
-
-        <mxCell id="persist" value="Background task (after streaming completes)&#10;• Save session / messages / references to SQLite&#10;• Update rolling summary&#10;• Extract &amp; save user facts (long-term memory)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=12;align=left;spacingLeft=8" vertex="1" parent="1">
-          <mxGeometry x="360" y="1770" width="360" height="100" as="geometry" />
-        </mxCell>
-
-        <!-- ===== EDGES (top flow) ===== -->
-        <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;" edge="1" parent="1" source="user" target="api"><mxGeometry relative="1" as="geometry" /></mxCell>
-        <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;" edge="1" parent="1" source="api" target="memctx"><mxGeometry relative="1" as="geometry" /></mxCell>
-        <mxCell id="e3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;" edge="1" parent="1" source="memctx" target="planner"><mxGeometry relative="1" as="geometry" /></mxCell>
-        <mxCell id="e4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;" edge="1" parent="1" source="planner" target="tool"><mxGeometry relative="1" as="geometry" /></mxCell>
-        <mxCell id="e_sqlite_mem" value="read memory" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=open;dashed=1;startArrow=open;" edge="1" parent="1" source="ds_sqlite" target="memctx"><mxGeometry relative="1" as="geometry" /></mxCell>
-
-        <!-- ===== EDGES (tool routing) ===== -->
-        <mxCell id="e_rag" value="rag (legal)" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;fontStyle=1;fontColor=#b85450;" edge="1" parent="1" source="tool" target="r_retrieve"><mxGeometry relative="1" as="geometry" /></mxCell>
-        <mxCell id="e_tmpl" value="template" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;" edge="1" parent="1" source="tool" target="t_template"><mxGeometry relative="1" as="geometry" /></mxCell>
-        <mxCell id="e_ask" value="ask_user" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;" edge="1" parent="1" source="tool" target="t_ask"><mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="940" y="510" /></Array></mxGeometry></mxCell>
-        <mxCell id="e_reject" value="reject" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;" edge="1" parent="1" source="tool" target="t_reject"><mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="1180" y="510" /><mxPoint x="1180" y="837" /></Array></mxGeometry></mxCell>
-        <mxCell id="e_web" value="web" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;" edge="1" parent="1" source="tool" target="t_web"><mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="1210" y="510" /><mxPoint x="1210" y="945" /></Array></mxGeometry></mxCell>
-
-        <!-- ===== EDGES (RAG pipeline) ===== -->
-        <mxCell id="e_q1" value="semantic search" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=open;dashed=1;startArrow=open;" edge="1" parent="1" source="ds_qdrant" target="r_retrieve"><mxGeometry relative="1" as="geometry" /></mxCell>
-        <mxCell id="e_r1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;" edge="1" parent="1" source="r_retrieve" target="r_extract"><mxGeometry relative="1" as="geometry" /></mxCell>
-        <mxCell id="e_r2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;" edge="1" parent="1" source="r_extract" target="r_grade"><mxGeometry relative="1" as="geometry" /></mxCell>
-        <mxCell id="e_r3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;" edge="1" parent="1" source="r_grade" target="r_gradecheck"><mxGeometry relative="1" as="geometry" /></mxCell>
-
-        <mxCell id="e_retry" value="Not enough → rewrite query &amp; retry (≤ 2 iterations, keep best)" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;fontColor=#d79b00;fontStyle=2;" edge="1" parent="1" source="r_gradecheck" target="r_retrieve"><mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="600" y="1030" /><mxPoint x="600" y="685" /></Array></mxGeometry></mxCell>
-
-        <mxCell id="e_r4" value="Enough / max iters" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;" edge="1" parent="1" source="r_gradecheck" target="r_webfallback"><mxGeometry relative="1" as="geometry" /></mxCell>
-        <mxCell id="e_wf_yes" value="Yes → switch to Web" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;fontColor=#b85450;" edge="1" parent="1" source="r_webfallback" target="t_web"><mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="650" y="1160" /><mxPoint x="650" y="945" /></Array></mxGeometry></mxCell>
-        <mxCell id="e_wf_no" value="No" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;" edge="1" parent="1" source="r_webfallback" target="r_generate"><mxGeometry relative="1" as="geometry" /></mxCell>
-
-        <mxCell id="e_r5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;" edge="1" parent="1" source="r_generate" target="r_hallu"><mxGeometry relative="1" as="geometry" /></mxCell>
-        <mxCell id="e_r6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;" edge="1" parent="1" source="r_hallu" target="r_hallucheck"><mxGeometry relative="1" as="geometry" /></mxCell>
-        <mxCell id="e_regen" value="Not grounded → regenerate with missing-claim feedback" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;fontColor=#d79b00;fontStyle=2;" edge="1" parent="1" source="r_hallucheck" target="r_generate"><mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="120" y="1525" /><mxPoint x="120" y="1290" /></Array></mxGeometry></mxCell>
-        <mxCell id="e_hok" value="OK" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;fontStyle=1;" edge="1" parent="1" source="r_hallucheck" target="final"><mxGeometry relative="1" as="geometry" /></mxCell>
-
-        <!-- ===== EDGES (other tools → final) ===== -->
-        <mxCell id="e_tf1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;" edge="1" parent="1" source="t_template" target="final"><mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="940" y="1610" /><mxPoint x="540" y="1610" /></Array></mxGeometry></mxCell>
-        <mxCell id="e_tf2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;" edge="1" parent="1" source="t_ask" target="final"><mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="1130" y="752" /><mxPoint x="1130" y="1620" /><mxPoint x="540" y="1620" /></Array></mxGeometry></mxCell>
-        <mxCell id="e_tf3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;" edge="1" parent="1" source="t_reject" target="final"><mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="1150" y="837" /><mxPoint x="1150" y="1600" /><mxPoint x="540" y="1600" /></Array></mxGeometry></mxCell>
-        <mxCell id="e_tf4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;" edge="1" parent="1" source="t_web" target="final"><mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="940" y="1630" /><mxPoint x="700" y="1630" /></Array></mxGeometry></mxCell>
-
-        <!-- ===== EDGES (final → persist → sqlite) ===== -->
-        <mxCell id="e_fp" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;" edge="1" parent="1" source="final" target="persist"><mxGeometry relative="1" as="geometry" /></mxCell>
-        <mxCell id="e_ps" value="write" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;dashed=1;" edge="1" parent="1" source="persist" target="ds_sqlite"><mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="120" y="1820" /></Array></mxGeometry></mxCell>
-
+        <mxCell id="oe1" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;" edge="1" parent="1" source="o_user" target="o_api"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="oe2" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;" edge="1" parent="1" source="o_api" target="o_mem"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="oe3" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;" edge="1" parent="1" source="o_mem" target="o_plan"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="oe4" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;" edge="1" parent="1" source="o_plan" target="o_route"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="oe_rag" value="rag" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;fontStyle=1;fontColor=#b85450;" edge="1" parent="1" source="o_route" target="o_b_rag"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="oe_tmpl" value="template" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;" edge="1" parent="1" source="o_route" target="o_b_tmpl"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="oe_ask" value="ask_user" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;" edge="1" parent="1" source="o_route" target="o_b_ask"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="oe_rej" value="reject" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;" edge="1" parent="1" source="o_route" target="o_b_reject"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="oe_web" value="web" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;" edge="1" parent="1" source="o_route" target="o_b_web"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="oe_f1" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;" edge="1" parent="1" source="o_b_rag" target="o_final"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="oe_f2" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;dashed=1;" edge="1" parent="1" source="o_b_web" target="o_final"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="oe_fp" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;" edge="1" parent="1" source="o_final" target="o_persist"><mxGeometry relative="1" as="geometry" /></mxCell>
       </root>
     </mxGraphModel>
   </diagram>
+
+  <!-- ============================================================= -->
+  <!-- PAGE 2 — REQUEST INTAKE & PLANNING                             -->
+  <!-- ============================================================= -->
+  <diagram id="intake" name="2-Intake-Planning">
+    <mxGraphModel dx="1000" dy="700" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="900" pageHeight="1000" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <mxCell id="i_title" value="Request Intake &amp; Planner Agent" style="text;html=1;align=center;fontSize=18;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="250" y="10" width="400" height="30" as="geometry" />
+        </mxCell>
+
+        <mxCell id="i_user" value="User (Web UI)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=15;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="320" y="60" width="260" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="i_api" value="API: POST /api/chat/chatbot-agentic&#10;query · session_id · use_web_fallback&#10;→ returns Server-Sent Events stream" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=14;align=left;spacingLeft=10" vertex="1" parent="1">
+          <mxGeometry x="300" y="150" width="300" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="i_mem" value="Memory.build_context(session_id)&#10;[ long-term facts ] + [ session summary ] + [ last 5 turns ]" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=14;align=left;spacingLeft=10" vertex="1" parent="1">
+          <mxGeometry x="300" y="270" width="300" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="i_sqlite" value="SQLite&#10;chat_history.db" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=14;fillColor=#f8cecc;strokeColor=#b85450;fontSize=13" vertex="1" parent="1">
+          <mxGeometry x="60" y="270" width="140" height="80" as="geometry" />
+        </mxCell>
+
+        <mxCell id="i_plan" value="Planner Agent — single LLM call (Claude Sonnet 4.5)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=15;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="240" y="400" width="420" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="i_out_intent" value="intent&#10;legal · chitchat&#10;realtime · out_of_scope" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=13" vertex="1" parent="1">
+          <mxGeometry x="60" y="500" width="180" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="i_out_tool" value="tool&#10;rag · template&#10;web · reject · ask_user" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=13" vertex="1" parent="1">
+          <mxGeometry x="260" y="500" width="180" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="i_out_rw" value="rewritten_query&#10;(self-contained,&#10;refs resolved)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=13" vertex="1" parent="1">
+          <mxGeometry x="460" y="500" width="180" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="i_out_ent" value="entities&#10;metadata filter (doc type,&#10;issuer, issue year)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=13" vertex="1" parent="1">
+          <mxGeometry x="660" y="500" width="180" height="70" as="geometry" />
+        </mxCell>
+
+        <mxCell id="i_route" value="Route by tool&#10;(enforced routing rules)" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=14;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="350" y="630" width="200" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="i_next" value="→ Legal RAG pipeline (Fig. 3)  /  Auxiliary tools (Fig. 4)" style="text;html=1;align=center;fontSize=13;fontStyle=2;fontColor=#6c8ebf" vertex="1" parent="1">
+          <mxGeometry x="250" y="760" width="400" height="20" as="geometry" />
+        </mxCell>
+
+        <mxCell id="ie1" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;" edge="1" parent="1" source="i_user" target="i_api"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="ie2" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;" edge="1" parent="1" source="i_api" target="i_mem"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="ie3" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;" edge="1" parent="1" source="i_mem" target="i_plan"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="ie_db" value="read memory" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=open;startArrow=open;dashed=1;" edge="1" parent="1" source="i_sqlite" target="i_mem"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="ie_o1" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;" edge="1" parent="1" source="i_plan" target="i_out_intent"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="ie_o2" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;" edge="1" parent="1" source="i_plan" target="i_out_tool"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="ie_o3" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;" edge="1" parent="1" source="i_plan" target="i_out_rw"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="ie_o4" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;" edge="1" parent="1" source="i_plan" target="i_out_ent"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="ie_r" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;" edge="1" parent="1" source="i_out_tool" target="i_route"><mxGeometry relative="1" as="geometry" /></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+
+  <!-- ============================================================= -->
+  <!-- PAGE 3 — INTERNAL LEGAL RAG PIPELINE                           -->
+  <!-- ============================================================= -->
+  <diagram id="rag-pipeline" name="3-Legal-RAG-Pipeline">
+    <mxGraphModel dx="1000" dy="700" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="900" pageHeight="1500" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <mxCell id="p_title" value="Internal Legal RAG Pipeline (tool = rag)" style="text;html=1;align=center;fontSize=18;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="230" y="10" width="460" height="30" as="geometry" />
+        </mxCell>
+
+        <mxCell id="p_in" value="From Planner: rewritten_query + entities" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=14;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="300" y="60" width="320" height="45" as="geometry" />
+        </mxCell>
+
+        <mxCell id="p_retrieve" value="① Retrieve &amp; Rerank&#10;• Generate 3 query variants (multi-query)&#10;• Vietnamese tokenize (PyVi ViTokenizer)&#10;• Qdrant search + metadata filter&#10;• RRF fusion → up to 50 documents&#10;• Cross-Encoder rerank → top 5" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=14;align=left;spacingLeft=10" vertex="1" parent="1">
+          <mxGeometry x="280" y="145" width="360" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="p_qdrant" value="Qdrant&#10;(Domain_Law)" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=14;fillColor=#f8cecc;strokeColor=#b85450;fontSize=13" vertex="1" parent="1">
+          <mxGeometry x="60" y="180" width="140" height="80" as="geometry" />
+        </mxCell>
+
+        <mxCell id="p_extract" value="② BERT Extract&#10;extract the relevant snippet from each document" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=14" vertex="1" parent="1">
+          <mxGeometry x="280" y="325" width="360" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="p_grade" value="③ Grader Agent (CRAG)&#10;→ relevance_score (0–1), decision" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=14;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="280" y="425" width="360" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="p_gcheck" value="score ≥ 0.6&#10;or sufficient?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=13" vertex="1" parent="1">
+          <mxGeometry x="370" y="525" width="180" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="p_wf" value="best &lt; 0.4&#10;&amp; Web on?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=13" vertex="1" parent="1">
+          <mxGeometry x="370" y="655" width="180" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="p_gen" value="④ Generator (Claude Sonnet 4.5)&#10;input: full article text + BERT highlight&#10;→ answer + references (cited documents)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=14;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="280" y="785" width="360" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="p_hallu" value="⑤ Hallucination Checker&#10;→ is_grounded, confidence, unsupported_claims" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=14;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="280" y="905" width="360" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="p_hcheck" value="Grounded?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=13" vertex="1" parent="1">
+          <mxGeometry x="370" y="1005" width="180" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="p_final" value="→ SSE 'final' event (Fig. 5)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=14;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="300" y="1140" width="320" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="p_web" value="→ Web search fallback (Fig. 4)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=13" vertex="1" parent="1">
+          <mxGeometry x="660" y="670" width="200" height="60" as="geometry" />
+        </mxCell>
+
+        <mxCell id="pe0" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;" edge="1" parent="1" source="p_in" target="p_retrieve"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="pe_q" value="semantic search" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=open;startArrow=open;dashed=1;" edge="1" parent="1" source="p_qdrant" target="p_retrieve"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="pe1" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;" edge="1" parent="1" source="p_retrieve" target="p_extract"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="pe2" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;" edge="1" parent="1" source="p_extract" target="p_grade"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="pe3" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;" edge="1" parent="1" source="p_grade" target="p_gcheck"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="pe_retry" value="No → rewrite query &amp; retry (≤ 2, keep best)" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;fontColor=#d79b00;fontStyle=2;" edge="1" parent="1" source="p_gcheck" target="p_retrieve"><mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="730" y="570" /><mxPoint x="730" y="215" /></Array></mxGeometry></mxCell>
+        <mxCell id="pe4" value="Yes / max iters" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;" edge="1" parent="1" source="p_gcheck" target="p_wf"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="pe_wfy" value="Yes" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;fontColor=#b85450;" edge="1" parent="1" source="p_wf" target="p_web"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="pe_wfn" value="No" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;" edge="1" parent="1" source="p_wf" target="p_gen"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="pe5" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;" edge="1" parent="1" source="p_gen" target="p_hallu"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="pe6" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;" edge="1" parent="1" source="p_hallu" target="p_hcheck"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="pe_regen" value="No (conf ≥ 0.75 &amp; ≥ 2 bad claims)&#10;→ regenerate with feedback" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;fontColor=#d79b00;fontStyle=2;" edge="1" parent="1" source="p_hcheck" target="p_gen"><mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="160" y="1050" /><mxPoint x="160" y="825" /></Array></mxGeometry></mxCell>
+        <mxCell id="pe_ok" value="Yes" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;fontStyle=1;" edge="1" parent="1" source="p_hcheck" target="p_final"><mxGeometry relative="1" as="geometry" /></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+
+  <!-- ============================================================= -->
+  <!-- PAGE 4 — AUXILIARY TOOL BRANCHES                               -->
+  <!-- ============================================================= -->
+  <diagram id="tools" name="4-Tool-Branches">
+    <mxGraphModel dx="1000" dy="700" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="700" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <mxCell id="t_title" value="Auxiliary Tool Branches" style="text;html=1;align=center;fontSize=18;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="350" y="10" width="400" height="30" as="geometry" />
+        </mxCell>
+
+        <mxCell id="t_route" value="Route by tool&#10;(from Planner, Fig. 2)" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=14;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="470" y="70" width="180" height="90" as="geometry" />
+        </mxCell>
+
+        <mxCell id="t_tmpl" value="template (chit-chat)&#10;• Semantic search over information.json (cosine)&#10;• generate_information (LLM)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=13;align=left;spacingLeft=10" vertex="1" parent="1">
+          <mxGeometry x="40" y="230" width="260" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="t_ask" value="ask_user&#10;• Ask a clarifying question&#10;(clarifying_question)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=13;align=left;spacingLeft=10" vertex="1" parent="1">
+          <mxGeometry x="330" y="230" width="260" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="t_reject" value="reject&#10;• Polite refusal (invalid_query)&#10;• Suggest enabling Web Search" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=13;align=left;spacingLeft=10" vertex="1" parent="1">
+          <mxGeometry x="620" y="230" width="260" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="t_web" value="web (Tavily)&#10;• Tavily search → links + page content&#10;• Synthesize answer (LLM)&#10;• Hallucination Checker verification" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=13;align=left;spacingLeft=10" vertex="1" parent="1">
+          <mxGeometry x="910" y="230" width="270" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="t_tavily" value="Tavily Web Search API" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=12" vertex="1" parent="1">
+          <mxGeometry x="950" y="380" width="190" height="45" as="geometry" />
+        </mxCell>
+
+        <mxCell id="t_final" value="SSE 'final' event → answer + references (Fig. 5)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=14;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="400" y="500" width="340" height="50" as="geometry" />
+        </mxCell>
+
+        <mxCell id="te_t" value="template" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;" edge="1" parent="1" source="t_route" target="t_tmpl"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="te_a" value="ask_user" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;" edge="1" parent="1" source="t_route" target="t_ask"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="te_r" value="reject" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;" edge="1" parent="1" source="t_route" target="t_reject"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="te_w" value="web" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;" edge="1" parent="1" source="t_route" target="t_web"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="te_wt" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=open;startArrow=open;dashed=1;" edge="1" parent="1" source="t_web" target="t_tavily"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="te_f1" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;" edge="1" parent="1" source="t_tmpl" target="t_final"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="te_f2" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;" edge="1" parent="1" source="t_ask" target="t_final"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="te_f3" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;" edge="1" parent="1" source="t_reject" target="t_final"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="te_f4" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;" edge="1" parent="1" source="t_web" target="t_final"><mxGeometry relative="1" as="geometry" /></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+
+  <!-- ============================================================= -->
+  <!-- PAGE 5 — FINALIZATION & CONVERSATION MEMORY                    -->
+  <!-- ============================================================= -->
+  <diagram id="memory" name="5-Finalization-Memory">
+    <mxGraphModel dx="1000" dy="700" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="900" pageHeight="800" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <mxCell id="m_title" value="Finalization &amp; Conversation Memory" style="text;html=1;align=center;fontSize=18;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="230" y="10" width="440" height="30" as="geometry" />
+        </mxCell>
+
+        <mxCell id="m_final" value="SSE 'final' event&#10;answer + references → rendered on the Web UI" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=14;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="290" y="60" width="320" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="m_bg" value="Background task (after streaming completes)&#10;• Save session / messages / references&#10;• Update rolling session summary&#10;• Extract &amp; save user facts" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=14;align=left;spacingLeft=10" vertex="1" parent="1">
+          <mxGeometry x="290" y="160" width="320" height="110" as="geometry" />
+        </mxCell>
+
+        <mxCell id="m_short" value="Short-term memory&#10;last 5 turns verbatim&#10;+ rolling summary" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=13" vertex="1" parent="1">
+          <mxGeometry x="120" y="330" width="220" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="m_long" value="Long-term memory&#10;stable user facts&#10;(name, occupation, topics…)" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=13" vertex="1" parent="1">
+          <mxGeometry x="560" y="330" width="220" height="80" as="geometry" />
+        </mxCell>
+
+        <mxCell id="m_sqlite" value="SQLite — chat_history.db&#10;Chat_Sessions · Chat_Messages&#10;Chat_References · User_Facts" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=14;fillColor=#f8cecc;strokeColor=#b85450;fontSize=13" vertex="1" parent="1">
+          <mxGeometry x="330" y="470" width="240" height="110" as="geometry" />
+        </mxCell>
+
+        <mxCell id="m_loop" value="Reused by Memory.build_context on the next turn (Fig. 2)" style="text;html=1;align=center;fontSize=13;fontStyle=2;fontColor=#9673a6" vertex="1" parent="1">
+          <mxGeometry x="230" y="620" width="440" height="20" as="geometry" />
+        </mxCell>
+
+        <mxCell id="me1" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;" edge="1" parent="1" source="m_final" target="m_bg"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="me2" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;" edge="1" parent="1" source="m_bg" target="m_short"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="me3" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;" edge="1" parent="1" source="m_bg" target="m_long"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="me4" value="write" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;dashed=1;" edge="1" parent="1" source="m_short" target="m_sqlite"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="me5" value="write" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=block;dashed=1;" edge="1" parent="1" source="m_long" target="m_sqlite"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="me6" style="edgeStyle=orthogonalEdgeStyle;html=1;endArrow=open;dashed=1;" edge="1" parent="1" source="m_sqlite" target="m_loop"><mxGeometry relative="1" as="geometry" /></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+
 </mxfile>
